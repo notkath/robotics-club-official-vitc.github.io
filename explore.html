@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Explore - Club Official</title>
+    <meta property="og:title" content="Explore - Club Official" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/robo.jpeg"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html@0.1.12/dist/default/lib.umd.js"
+      ></script>
+      <link href="./explore.css" rel="stylesheet" />
+
+      <div class="explore-container">
+        <nav class="navbar-navbar navbar-root-class-name1">
+          <a href="index.html" class="navbar-navlink">
+            <img
+              alt="Planical7012"
+              src="public/SectionImages/clunb-removebg-preview-300h.png"
+              class="navbar-branding-logo"
+            />
+          </a>
+          <div class="navbar-nav-content">
+            <div class="navbar-nav-links">
+              <a href="about.html" class="navbar-link nav-link">About</a>
+              <a href="gallery.html" class="navbar-link1 nav-link">Gallery</a>
+              <a href="explore.html" class="navbar-link2 nav-link">Team</a>
+              <a href="contact.html" class="navbar-link3 nav-link">Contact</a>
+            </div>
+            <a href="blog.html" class="navbar-navlink1">
+              <div class="navbar-get-started get-started">
+                <span class="navbar-text">Blog Page</span>
+              </div>
+            </a>
+            <div id="open-mobile-menu" class="navbar-hamburger get-started">
+              <img
+                alt="image"
+                src="public/Icons/hamburger-200h.png"
+                class="navbar-image"
+              />
+            </div>
+          </div>
+          <div id="mobile-menu" class="navbar-mobile-menu">
+            <div class="navbar-branding">
+              <img
+                alt="image"
+                src="public/Branding/planical7012-ttpb.svg"
+                class="navbar-image1"
+              />
+              <div id="close-mobile-menu" class="navbar-container">
+                <svg viewBox="0 0 1024 1024" class="navbar-icon">
+                  <path
+                    d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="navbar-nav-links1">
+              <span class="nav-link">Features</span>
+              <span class="nav-link">Why us</span>
+              <span class="nav-link">Prices</span>
+              <span class="nav-link">Contact</span>
+            </div>
+            <div class="get-started">
+              <span class="navbar-text1">Get started</span>
+            </div>
+          </div>
+          <div>
+            <dangerous-html
+              html="<script>
+    /*
+Mobile menu - Code Embed
+*/
+
+/* listenForUrlChangesMobileMenu() makes sure that if you changes pages inside your app, 
+the mobile menu will still work*/
+
+const listenForUrlChangesMobileMenu = () => {
+    let url = location.href;
+    document.body.addEventListener('click', () => {
+        requestAnimationFrame(() => {
+            if (url !== location.href) {
+                runMobileMenuCodeEmbed();
+                url = location.href;
+            }
+        });
+    },
+    true
+    );
+};
+
+const runMobileMenuCodeEmbed = () => {
+    // Mobile menu
+    const mobileMenu = document.querySelector('#mobile-menu')
+
+    // Buttons
+    const closeButton = document.querySelector('#close-mobile-menu')
+    const openButton = document.querySelector('#open-mobile-menu')
+
+    // On openButton click, set the mobileMenu position left to -100vw
+    openButton &amp;&amp; openButton.addEventListener('click', function() {
+        mobileMenu.style.transform = 'translateX(0%)'
+    })
+
+    // On closeButton click, set the mobileMenu position to 0vw
+    closeButton &amp;&amp; closeButton.addEventListener('click', function() {
+        mobileMenu.style.transform = 'translateX(100%)'
+    })
+}
+
+runMobileMenuCodeEmbed()
+listenForUrlChangesMobileMenu()
+</script>"
+            ></dangerous-html>
+          </div>
+        </nav>
+        <section class="explore-section">
+          <div class="explore-hero">
+            <div class="explore-content">
+              <main class="explore-main">
+                <header class="explore-header">
+                  <h1 class="explore-heading">
+                    <span class="explore-text">Robotics Club</span>
+                    <br />
+                    <span>Vit Chennai</span>
+                    <br />
+                  </h1>
+                  <span class="explore-caption">
+                    Innovation is when Imagination meets Ambition
+                  </span>
+                </header>
+                <div class="explore-buttons">
+                  <a href="index.html" class="explore-navlink">
+                    <div class="explore-get-started button">
+                      <span class="explore-text04">&lt;-Home</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="explore-highlight">
+                  <div class="explore-avatars">
+                    <img
+                      alt="image"
+                      src="club/people/Harsh_Pandey.JPG"
+                      class="explore-image avatar"
+                    />
+                    <img
+                      alt="image"
+                      src="club/people/arokya.jpg"
+                      class="explore-image01 avatar"
+                    />
+                    <img
+                      alt="image"
+                      src="club/people/akash.jpg"
+                      class="explore-image02 avatar"
+                    />
+                  </div>
+                  <a href="explore.html" class="explore-navlink1">
+                    <label class="explore-caption01">
+                      Managed and Controlled by 100+ Members
+                    </label>
+                  </a>
+                </div>
+              </main>
+            </div>
+            <div class="explore-image03">
+              <img
+                alt="image"
+                src="club/Explore/EVE.webp"
+                class="explore-image04"
+              />
+            </div>
+            <div class="explore-image05">
+              <img
+                alt="image"
+                src="club/Explore/EVE.webp"
+                class="explore-image06"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="explore-section01">
+          <h2 class="explore-text05">From the desk of Faculty Coordinator</h2>
+          <section class="explore-note">
+            <div class="explore-content01">
+              <div class="explore-main01">
+                <div class="explore-caption02">
+                  <span class="explore-section02 section-head">
+                    Faculty Coordinator
+                  </span>
+                </div>
+                <div class="explore-heading01">
+                  <h2 class="section-heading">
+                    Arockia Selvakumar Arokia Doss
+                  </h2>
+                  <p class="section-description">
+                    As the faculty coordinator of the Robotics Club, it is my
+                    privilege to introduce our dynamic and vibrant community.
+                    Our club is a hub of creativity, innovation, and
+                    collaborative learning. We provide a platform for students
+                    to explore their passion for robotics, expand their
+                    technical skills, and cultivate a problem-solving mindset.
+                    Through engaging workshops, exciting projects, and
+                    competitive events, we aim to inspire and empower our
+                    members to excel in the world of robotics. Our club fosters
+                    a supportive environment where students can network, share
+                    ideas, and work together to push the boundaries of
+                    technological advancement. With a dedicated team of mentors
+                    and enthusiastic members, we strive to create a
+                    transformative experience that prepares students for future
+                    challenges and opportunities in the field of robotics.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="explore-image07">
+              <img
+                alt="image"
+                src="club/people/arokya.jpg"
+                class="explore-image08"
+              />
+            </div>
+          </section>
+          <a href="arokya.html" class="explore-navlink2 button">Know More</a>
+        </section>
+        <section class="explore-section03">
+          <header class="explore-header1">
+            <h2 class="explore-text06">
+              Our Talented and Experienced Team Members
+            </h2>
+            <span class="explore-text07">
+              Discover the Expertise and Passion of Our Highly Capable Team
+              Members in Delivering Exceptional Solutions and Services
+            </span>
+          </header>
+          <section class="explore-note01">
+            <div class="explore-content02">
+              <div class="explore-main02">
+                <div class="explore-caption03">
+                  <span class="explore-section04 section-head">President</span>
+                </div>
+                <div class="explore-heading03">
+                  <h2 class="section-heading">Harsh Pandey</h2>
+                  <p class="section-description">
+                    As the President of this esteemed organization, I have been
+                    continually impressed by the talent, dedication, and
+                    innovation demonstrated by our Robotics Club. Being a
+                    lifelong technology enthusiast myself, I have always
+                    appreciated the power of automation and how it can
+                    revolutionize various industries. The Robotics Club embodies
+                    this spirit and pushes the boundaries of what is possible
+                    with technology. Their passion for robotics has led to the
+                    development of cutting-edge projects and inspired countless
+                    individuals to explore the field further. I am proud to be
+                    associated with such a talented and forward-thinking group
+                    of individuals, and I look forward to seeing all the amazing
+                    things they will achieve in the future.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="explore-image09">
+              <img
+                alt="image"
+                src="club/people/Harsh_Pandey.JPG"
+                class="explore-image10"
+              />
+            </div>
+          </section>
+          <div class="explore-container01">
+            <span class="explore-text08">
+              _________________________________________________
+            </span>
+          </div>
+          <section class="explore-note02">
+            <div class="explore-content03">
+              <div class="explore-main03">
+                <div class="explore-caption04">
+                  <span class="explore-section05 section-head">
+                    President
+                  </span>
+                </div>
+                <div class="explore-heading05">
+                  <h2 class="section-heading">Aakash Kumar</h2>
+                  <p class="section-description">
+                    As the President of the Robotics Club, my vision is to
+                    foster a thriving and inclusive community of robotics
+                    enthusiasts. Together with the dedicated web development
+                    team, we will create a website that reflects our club's
+                    values and aspirations. By incorporating user feedback and
+                    suggestions, we will ensure that the website meets the
+                    diverse needs of our members. Our aim is to provide an
+                    intuitive platform that facilitates learning, collaboration,
+                    and exploration in the field of robotics, ultimately
+                    inspiring individuals to pursue their passion and contribute
+                    to the club's growth.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="explore-image11">
+              <img
+                alt="image"
+                src="club/people/akash.jpg"
+                class="explore-image12"
+              />
+            </div>
+          </section>
+          <div class="explore-container02">
+            <span class="explore-text09">
+              _________________________________________________
+            </span>
+          </div>
+          <section class="explore-note03">
+            <div class="explore-content04">
+              <div class="explore-main04">
+                <div class="explore-caption05">
+                  <span class="explore-section06 section-head">
+                    Vice-president
+                  </span>
+                </div>
+                <div class="explore-heading07">
+                  <h2 class="section-heading">Sohail Agarwal</h2>
+                  <p class="section-description">
+                    As Vice President of the Robotics Club, we are dedicated to
+                    fostering a thriving community of robotics enthusiasts.
+                    Through our web development expertise, we aim to create a
+                    visually stunning and highly functional website that
+                    reflects the club's mission and engages members and visitors
+                    alike. By providing a user-friendly interface and
+                    interactive features, we strive to enhance the overall
+                    experience of our club members and inspire more individuals
+                    to join our dynamic community.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="explore-image13">
+              <img
+                alt="image"
+                src="club/people/sohial.jpg"
+                class="explore-image14"
+              />
+            </div>
+          </section>
+          <div class="explore-container03">
+            <span class="explore-text10">
+              _________________________________________________
+            </span>
+          </div>
+          <section class="explore-note04">
+            <div class="explore-content05">
+              <div class="explore-main05">
+                <div class="explore-caption06">
+                  <span class="explore-section07 section-head">
+                    Vice-president
+                  </span>
+                </div>
+                <div class="explore-heading09">
+                  <h2 class="section-heading">Naveena Merin Vinny</h2>
+                  <p class="section-description">
+                    As Vice President of the Robotics Club, we are dedicated to
+                    fostering a thriving community of robotics enthusiasts.
+                    Through our web development expertise, we aim to create a
+                    visually stunning and highly functional website that
+                    reflects the club's mission and engages members and visitors
+                    alike. By providing a user-friendly interface and
+                    interactive features, we strive to enhance the overall
+                    experience of our club members and inspire more individuals
+                    to join our dynamic community.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="explore-image15">
+              <img
+                alt="image"
+                src="club/people/naveena.jpg"
+                class="explore-image16"
+              />
+            </div>
+          </section>
+          <div class="explore-container04">
+            <span class="explore-text11">
+              _________________________________________________
+            </span>
+          </div>
+          <section class="explore-note05">
+            <div class="explore-content06">
+              <div class="explore-main06">
+                <div class="explore-caption07">
+                  <span class="explore-section08 section-head">
+                    Finance head
+                  </span>
+                </div>
+                <div class="explore-heading11">
+                  <h2 class="section-heading">Suyash Agarwal</h2>
+                  <p class="section-description">
+                    As the Finance Head I extend my sincere gratitude to the
+                    Robotics Club members for their dedication and passion in
+                    contributing to the club's financial stability. Our active
+                    participation in fundraisers, sponsorships, and budget
+                    management has built a strong foundation for the club's
+                    success. Working together, we will continue to maximize our
+                    financial potential and propel the
+                    club&nbsp;to&nbsp;new&nbsp;heights.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="explore-image17">
+              <img
+                alt="image"
+                src="club/people/SUYASH AGRAWAL.jpg"
+                class="explore-image18"
+              />
+            </div>
+          </section>
+          <div class="explore-container05">
+            <span class="explore-text12">
+              _________________________________________________
+            </span>
+          </div>
+          <section class="explore-note06">
+            <div class="explore-content07">
+              <div class="explore-main07">
+                <div class="explore-caption08">
+                  <span class="explore-section09 section-head">General</span>
+                </div>
+                <span class="explore-section10 section-head">Secretary</span>
+                <div class="explore-heading13">
+                  <h2 class="section-heading">Atharv Pathak</h2>
+                  <p class="section-description">
+                    As the General Secretary of our vibrant club, I want to
+                    express my heartfelt appreciation for your unwavering
+                    support and active involvement. Your commitment to the
+                    club's activities, meetings, and events has been
+                    commendable, creating a sense of camaraderie and unity among
+                    us all. Your enthusiasm and dedication have contributed
+                    immensely to the club's growth and success. Let's continue
+                    to collaborate, inspire, and push the boundaries of
+                    innovation together. As General Secretary, I am proud to be
+                    a part of this incredible journey with each and
+                    every&nbsp;one&nbsp;of&nbsp;you
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="explore-image19">
+              <img
+                alt="image"
+                src="club/people/Atharv_Pathak.jpg"
+                class="explore-image20"
+              />
+            </div>
+          </section>
+          <div class="explore-container06">
+            <span class="explore-text13">
+              _________________________________________________
+            </span>
+          </div>
+          <section class="explore-note07">
+            <div class="explore-content08">
+              <div class="explore-main08">
+                <div class="explore-caption09">
+                  <span class="explore-section11 section-head">
+                    Technical head
+                  </span>
+                </div>
+                <div class="explore-heading15">
+                  <h2 class="section-heading">Sarvesh Agarwal</h2>
+                  <p class="section-description">
+                    As the Technical Head of our esteemed club, I want to
+                    express my deepest gratitude for your invaluable
+                    contributions and unwavering dedication to the technical
+                    aspects of our projects and initiatives. Your technical
+                    expertise, problem-solving skills, and relentless pursuit of
+                    innovation have been instrumental in shaping the club's
+                    success. From designing intricate circuitry to programming
+                    sophisticated algorithms, your passion for technology has
+                    elevated our projects to new heights. Together, let's
+                    continue to push the boundaries of robotics, explore new
+                    frontiers, and inspire one another to reach even greater
+                    accomplishments. As Technical Head, I am honored to work
+                    alongside such talented and enthusiastic individuals in this
+                    incredible journey of technical&nbsp;excellence.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="explore-image21">
+              <img
+                alt="image"
+                src="club/people/sarvesh.jpg"
+                class="explore-image22"
+              />
+            </div>
+          </section>
+          <div class="explore-container07">
+            <span class="explore-text14">
+              _________________________________________________
+            </span>
+          </div>
+          <section class="explore-note08">
+            <div class="explore-content09">
+              <div class="explore-main09">
+                <div class="explore-caption10">
+                  <span class="explore-section12 section-head">
+                    Management and
+                  </span>
+                </div>
+                <span class="explore-section13 section-head">operations</span>
+                <div class="explore-heading17">
+                  <h2 class="section-heading">Sohail Agarwal</h2>
+                  <p class="section-description">
+                    As the Management Head of the Robotics Club, my
+                    responsibility is to ensure smooth operations and
+                    coordination within the club. In collaboration with the web
+                    development team, I will ensure that the website is
+                    functional, reliable, and user-friendly. From managing user
+                    registrations to organizing events and resources, the
+                    website will serve as a central hub for efficient
+                    communication and engagement. By implementing effective
+                    project management strategies and regularly updating the
+                    website's content, we will provide a seamless experience for
+                    our club members and stakeholders.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="explore-image23">
+              <img
+                alt="image"
+                src="club/people/sohial.jpg"
+                class="explore-image24"
+              />
+            </div>
+          </section>
+          <div class="explore-container08">
+            <span class="explore-text15">
+              _________________________________________________
+            </span>
+          </div>
+          <section class="explore-note09">
+            <div class="explore-content10">
+              <div class="explore-main10">
+                <div class="explore-caption11">
+                  <span class="explore-section14 section-head">Design</span>
+                </div>
+                <div class="explore-heading19">
+                  <h2 class="section-heading">Khsitij Agarwal</h2>
+                  <p class="section-description">
+                    As the Design Head of the Robotics Club, my goal is to
+                    create an aesthetically pleasing and visually captivating
+                    website. Through careful consideration of color schemes,
+                    typography, and layout, I will ensure that the website
+                    reflects the club's innovative and dynamic nature. By
+                    incorporating intuitive navigation and engaging visual
+                    elements, I aim to provide users with an exceptional
+                    browsing experience. Together with the web development team,
+                    we will create a website that not only looks impressive but
+                    also effectively communicates the club's mission and values.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="explore-image25">
+              <img
+                alt="image"
+                src="club/people/khitij.jpeg"
+                class="explore-image26"
+              />
+            </div>
+          </section>
+          <div class="explore-container09">
+            <span class="explore-text16">
+              _________________________________________________
+            </span>
+          </div>
+          <section class="explore-note10">
+            <div class="explore-content11">
+              <div class="explore-main11">
+                <div class="explore-caption12">
+                  <span class="explore-section15 section-head">Marketing</span>
+                </div>
+                <div class="explore-heading21">
+                  <h2 class="section-heading">Godavari Tanmayi</h2>
+                  <p class="section-description">
+                    As Marketing Heads of the Robotics Club, our role is to
+                    promote the club's activities and attract a wider audience.
+                    Through our web development skills, we aim to create an
+                    appealing and user-centric website that effectively
+                    communicates the club's value proposition. We will optimize
+                    the website's design and content to engage visitors, convey
+                    our club's unique selling points, and ultimately increase
+                    participation. By implementing effective SEO strategies and
+                    leveraging social media platforms, we will ensure maximum
+                    visibility and reach for the club.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="explore-image27">
+              <img
+                alt="image"
+                src="club/people/godavari.jpg"
+                class="explore-image28"
+              />
+            </div>
+          </section>
+          <div class="explore-container10">
+            <span class="explore-text17">
+              _________________________________________________
+            </span>
+          </div>
+          <section class="explore-note11">
+            <div class="explore-content12">
+              <div class="explore-main12">
+                <div class="explore-caption13">
+                  <span class="explore-section16 section-head">Marketing</span>
+                </div>
+                <div class="explore-heading23">
+                  <h2 class="section-heading">Utkarsh Kedia</h2>
+                  <p class="section-description">
+                    As Marketing Head of the Robotics Club, our role is to
+                    promote the club's activities and attract a wider audience.
+                    Through our web development skills, we aim to create an
+                    appealing and user-centric website that effectively
+                    communicates the club's value proposition. We will optimize
+                    the website's design and content to engage visitors, convey
+                    our club's unique selling points, and ultimately increase
+                    participation. By implementing effective SEO strategies and
+                    leveraging social media platforms, we will ensure maximum
+                    visibility and reach for the club.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="explore-image29">
+              <img
+                alt="image"
+                src="club/people/utkarsh.jpeg"
+                class="explore-image30"
+              />
+            </div>
+          </section>
+        </section>
+        <section class="explore-section17">
+          <header class="explore-header2">
+            <header class="explore-left">
+              <span class="section-head">From the web</span>
+              <h2 class="section-heading">Meet the Developers</h2>
+            </header>
+            <div class="explore-right">
+              <p class="explore-paragraph12 section-description">
+                As a team of web developers, we believe that teamwork is at the
+                core of any successful project. By working collaboratively, we
+                are able to leverage our individual strengths and expertise to
+                create seamless, user-friendly websites that exceed our user's
+                expectations
+              </p>
+            </div>
+          </header>
+          <main class="explore-cards">
+            <section class="card-card card-root-class-name3">
+              <div class="card-container">
+                <img
+                  alt="image"
+                  src="club/people/anas.jpg"
+                  class="card-image"
+                />
+              </div>
+              <main class="card-content">
+                <h1 class="card-header"><span>Anas Jawed</span></h1>
+                <p class="card-description">
+                  <span>
+                    As a web developer, I specialize in designing and building
+                    visually appealing and functional websites that deliver an
+                    exceptional user experience.
+                  </span>
+                </p>
+              </main>
+            </section>
+            <section class="card-card card-root-class-name4">
+              <div class="card-container">
+                <img
+                  alt="image"
+                  src="club/people/Abhijit_Ghosh.jpg"
+                  class="card-image"
+                />
+              </div>
+              <main class="card-content">
+                <h1 class="card-header"><span>Abhijit Ghosh</span></h1>
+                <p class="card-description">
+                  <span>
+                    As a skilled web developer, my expertise lies in creating
+                    visually captivating and highly functional websites that
+                    provide users with an outstanding browsing experience
+                  </span>
+                </p>
+              </main>
+            </section>
+          </main>
+        </section>
+        <section class="explore-section19">
+          <div class="explore-cube">
+            <div class="explore-top side"></div>
+            <div class="explore-front side"></div>
+            <div class="explore-left1 side"></div>
+          </div>
+          <main class="explore-banner">
+            <div class="explore-header3">
+              <h2 class="section-heading">
+                Be the part of our splendid team.....!
+              </h2>
+              <p class="explore-description section-description">
+                Apply for the recruitment in the club.
+              </p>
+            </div>
+            <div class="explore-buttons1">
+              <a
+                href="mailto:roboticsclubvitc@gmail.com?subject=Regarding the recruitment in the club"
+                class="explore-link"
+              >
+                <div class="explore-get-started1 button">
+                  <span class="explore-text18">Mail Us</span>
+                </div>
+              </a>
+            </div>
+          </main>
+        </section>
+        <section class="explore-section20">
+          <div class="explore-cube1">
+            <div class="explore-top1 side"></div>
+            <div class="explore-front1 side"></div>
+            <div class="explore-left2 side"></div>
+          </div>
+          <main class="explore-pricing">
+            <header class="explore-header4">
+              <header class="explore-left3">
+                <span class="section-head">Quote of the day</span>
+                <h2 class="section-heading explore-heading27">
+                  Start small, think big
+                </h2>
+              </header>
+              <div class="explore-right1">
+                <p class="explore-paragraph13 section-description">
+                  Hope is the light that keeps us going, even in the darkest of
+                  times. Never let it fade away.
+                </p>
+              </div>
+            </header>
+          </main>
+          <div class="explore-help">
+            <span class="explore-text19">
+              <span>Need any help?</span>
+              <br />
+            </span>
+            <div class="explore-contact-support">
+              <a
+                href="mailto:roboticsclubvitc@gmail.com?subject=Regarding Questions and Help"
+                class="explore-link1"
+              >
+                <p class="explore-text22">Contact Us -&gt;</p>
+              </a>
+            </div>
+          </div>
+        </section>
+        <footer class="footer-footer">
+          <div class="footer-content">
+            <main class="footer-main-content">
+              <div class="footer-content1">
+                <header class="footer-main">
+                  <div class="footer-header">
+                    <img
+                      alt="image"
+                      src="public/SectionImages/clunb-removebg-preview-200h.png"
+                      class="footer-branding"
+                    />
+                    <span class="footer-text">
+                      <span>
+                        The only Official Website of Robotics Club VIT Chennai
+                      </span>
+                    </span>
+                  </div>
+                  <div class="footer-socials">
+                    <a
+                      href="https://www.linkedin.com/company/robotics-club-vitc/?lipi=urn%3Ali%3Apage%3Acompanies_company_index%3B07f210d1-1d23-4de2-bcc9-09964095266a"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="footer-link"
+                    >
+                      <img
+                        alt="image"
+                        src="public/Icons/linkedin-200h.png"
+                        class="social"
+                      />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/robotics_club_vitc/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="footer-link1"
+                    >
+                      <img
+                        alt="image"
+                        src="public/Icons/instagram-200h.png"
+                        class="social"
+                      />
+                    </a>
+                    <a
+                      href="https://www.facebook.com/VITCCRoboticsClub?mibextid=ZbWKwL"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="footer-link2"
+                    >
+                      <svg viewBox="0 0 1024 1024" class="footer-icon">
+                        <path
+                          d="M608 192h160v-192h-160c-123.514 0-224 100.486-224 224v96h-128v192h128v512h192v-512h160l32-192h-192v-96c0-17.346 14.654-32 32-32z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </header>
+                <header class="footer-categories">
+                  <div class="footer-category">
+                    <div class="footer-header1">
+                      <span class="footer-header">
+                        <span>Institution</span>
+                      </span>
+                    </div>
+                    <div class="footer-links">
+                      <a
+                        href="https://chennai.vit.ac.in/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="footer-text02 footer-link"
+                      >
+                        <span>Official Website</span>
+                      </a>
+                      <a
+                        href="https://youtube.com/@VITChennaic"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="footer-text03 footer-link"
+                      >
+                        <span>YouTube</span>
+                      </a>
+                      <a
+                        href="https://chennai.vit.ac.in/campus/studentchapters_clubs/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="footer-text04 footer-link"
+                      >
+                        <span>Clubs And Chapters</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="footer-category1">
+                    <div class="footer-header2">
+                      <span class="footer-header"><span>Club</span></span>
+                    </div>
+                    <div class="footer-links1">
+                      <a href="about.html" class="footer-text06 footer-link">
+                        <span>About</span>
+                      </a>
+                      <a href="explore.html" class="footer-text07 footer-link">
+                        <span>Team</span>
+                      </a>
+                      <a href="blog.html" class="footer-text08 footer-link">
+                        <span>Posts</span>
+                      </a>
+                      <a href="contact.html" class="footer-text09 footer-link">
+                        <span>Special Teams</span>
+                      </a>
+                    </div>
+                  </div>
+                </header>
+              </div>
+              <section class="footer-copyright">
+                <span class="footer-text10">
+                  <span>
+                    © 2023 Website Designed by Anas Jawed. All Rights Reserved.
+                  </span>
+                </span>
+              </section>
+            </main>
+            <main class="footer-subscribe">
+              <main class="footer-main1">
+                <h1 class="footer-heading">
+                  <span>Recruitment for the Club</span>
+                </h1>
+                <div class="footer-input-field">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    class="footer-textinput input"
+                  />
+                  <a
+                    href="mailto:roboticsclubvitc@gmail.com?subject=Regarding the recruitment in the Club"
+                    class="footer-link3"
+                  >
+                    <div class="footer-buy button">
+                      <span class="footer-text11"><span>-&gt;</span></span>
+                      <span class="footer-text12">Mail Us</span>
+                    </div>
+                  </a>
+                </div>
+              </main>
+              <h1 class="footer-notice">
+                <span>
+                  Please send your details and a brief introduction about
+                  yourself including interested departments for consideration.
+                </span>
+              </h1>
+            </main>
+            <section class="footer-copyright1">
+              <span class="footer-text13">
+                <span>
+                  © 2023 Website Designed by Anas Jawed. All Rights Reserved.
+                </span>
+              </span>
+            </section>
+          </div>
+        </footer>
+        <div>
+          <dangerous-html
+            html="<script>
+    /*
+Accordion - Code Embed
+*/
+
+/* listenForUrlChangesAccordion() makes sure that if you changes pages inside your app,
+the Accordions will still work*/
+
+const listenForUrlChangesAccordion = () => {
+      let url = location.href;
+      document.body.addEventListener(
+        'click',
+        () => {
+          requestAnimationFrame(() => {
+            if (url !== location.href) {
+              runAccordionCodeEmbed();
+              url = location.href;
+            }
+          });
+        },
+        true
+      );
+    };
+
+
+const runAccordionCodeEmbed = () => {
+    const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+    const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+    const accordionIcons = document.querySelectorAll('[data-role='accordion-icon']'); // All accordion icons
+
+    accordionContents.forEach((accordionContent) => {
+        accordionContent.style.display = 'none'; //Hides all accordion contents
+    });
+
+    accordionContainers.forEach((accordionContainer, index) => {
+        accordionContainer.addEventListener('click', () => {
+            accordionContents.forEach((accordionContent) => {
+            accordionContent.style.display = 'none'; //Hides all accordion contents
+            });
+
+            accordionIcons.forEach((accordionIcon) => {
+                accordionIcon.style.transform = 'rotate(0deg)'; // Resets all icon transforms to 0deg (default)
+            });
+
+            accordionContents[index].style.display = 'flex'; // Shows accordion content
+            accordionIcons[index].style.transform = 'rotate(180deg)'; // Rotates accordion icon 180deg
+        });
+    });
+}
+
+runAccordionCodeEmbed()
+listenForUrlChangesAccordion()
+
+/*
+Here's what the above is doing:
+    1. Selects all accordion containers, contents, and icons
+    2. Hides all accordion contents
+    3. Adds an event listener to each accordion container
+    4. When an accordion container is clicked, it:
+        - Hides all accordion contents
+        - Resets all icon transforms to 0deg (default)
+        - Checks if this container has class 'accordion-open'
+            - If it does, it removes class 'accordion-open'
+            - If it doesn't, it:
+                - Removes class 'accordion-open' from all containers
+                - Adds class 'accordion-open' to this container
+                - Shows accordion content
+                - Rotates accordion icon 180deg
+*/
+</script>"
+          ></dangerous-html>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

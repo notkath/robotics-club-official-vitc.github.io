@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact - Club Official</title>
+    <meta property="og:title" content="Contact - Club Official" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/robo.jpeg"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html@0.1.12/dist/default/lib.umd.js"
+      ></script>
+      <link href="./contact.css" rel="stylesheet" />
+
+      <div class="contact-container">
+        <nav class="navbar-navbar navbar-root-class-name5">
+          <a href="index.html" class="navbar-navlink">
+            <img
+              alt="Planical7012"
+              src="public/SectionImages/clunb-removebg-preview-300h.png"
+              class="navbar-branding-logo"
+            />
+          </a>
+          <div class="navbar-nav-content">
+            <div class="navbar-nav-links">
+              <a href="about.html" class="navbar-link nav-link">About</a>
+              <a href="gallery.html" class="navbar-link1 nav-link">Gallery</a>
+              <a href="explore.html" class="navbar-link2 nav-link">Team</a>
+              <a href="contact.html" class="navbar-link3 nav-link">Contact</a>
+            </div>
+            <a href="blog.html" class="navbar-navlink1">
+              <div class="navbar-get-started get-started">
+                <span class="navbar-text">Blog Page</span>
+              </div>
+            </a>
+            <div id="open-mobile-menu" class="navbar-hamburger get-started">
+              <img
+                alt="image"
+                src="public/Icons/hamburger-200h.png"
+                class="navbar-image"
+              />
+            </div>
+          </div>
+          <div id="mobile-menu" class="navbar-mobile-menu">
+            <div class="navbar-branding">
+              <img
+                alt="image"
+                src="public/Branding/planical7012-ttpb.svg"
+                class="navbar-image1"
+              />
+              <div id="close-mobile-menu" class="navbar-container">
+                <svg viewBox="0 0 1024 1024" class="navbar-icon">
+                  <path
+                    d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="navbar-nav-links1">
+              <span class="nav-link">Features</span>
+              <span class="nav-link">Why us</span>
+              <span class="nav-link">Prices</span>
+              <span class="nav-link">Contact</span>
+            </div>
+            <div class="get-started">
+              <span class="navbar-text1">Get started</span>
+            </div>
+          </div>
+          <div>
+            <dangerous-html
+              html="<script>
+    /*
+Mobile menu - Code Embed
+*/
+
+/* listenForUrlChangesMobileMenu() makes sure that if you changes pages inside your app, 
+the mobile menu will still work*/
+
+const listenForUrlChangesMobileMenu = () => {
+    let url = location.href;
+    document.body.addEventListener('click', () => {
+        requestAnimationFrame(() => {
+            if (url !== location.href) {
+                runMobileMenuCodeEmbed();
+                url = location.href;
+            }
+        });
+    },
+    true
+    );
+};
+
+const runMobileMenuCodeEmbed = () => {
+    // Mobile menu
+    const mobileMenu = document.querySelector('#mobile-menu')
+
+    // Buttons
+    const closeButton = document.querySelector('#close-mobile-menu')
+    const openButton = document.querySelector('#open-mobile-menu')
+
+    // On openButton click, set the mobileMenu position left to -100vw
+    openButton &amp;&amp; openButton.addEventListener('click', function() {
+        mobileMenu.style.transform = 'translateX(0%)'
+    })
+
+    // On closeButton click, set the mobileMenu position to 0vw
+    closeButton &amp;&amp; closeButton.addEventListener('click', function() {
+        mobileMenu.style.transform = 'translateX(100%)'
+    })
+}
+
+runMobileMenuCodeEmbed()
+listenForUrlChangesMobileMenu()
+</script>"
+            ></dangerous-html>
+          </div>
+        </nav>
+        <section class="contact-section">
+          <div class="contact-hero">
+            <div class="contact-content">
+              <main class="contact-main">
+                <header class="contact-header">
+                  <h1 class="contact-heading">
+                    <span class="contact-text">Robotics Club</span>
+                    <br />
+                    <span>Vit Chennai</span>
+                    <br />
+                  </h1>
+                  <span class="contact-caption">
+                    Innovation is when Imagination meets Ambition
+                  </span>
+                </header>
+                <div class="contact-buttons">
+                  <a href="index.html" class="contact-navlink">
+                    <div class="contact-get-started button">
+                      <span class="contact-text4">&lt;-Home Page</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="contact-highlight">
+                  <div class="contact-avatars">
+                    <img
+                      alt="image"
+                      src="club/people/Harsh_Pandey.JPG"
+                      class="contact-image avatar"
+                    />
+                    <img
+                      alt="image"
+                      src="club/people/arokya.jpg"
+                      class="contact-image1 avatar"
+                    />
+                    <img
+                      alt="image"
+                      src="club/people/akash.jpg"
+                      class="contact-image2 avatar"
+                    />
+                  </div>
+                  <a href="explore.html" class="contact-navlink1">
+                    <label class="contact-caption1">
+                      Managed and Controlled by 100+ Members
+                    </label>
+                  </a>
+                </div>
+              </main>
+            </div>
+            <div class="contact-image3">
+              <img
+                alt="image"
+                src="club/Contact/piccsa.png"
+                class="contact-image4"
+              />
+            </div>
+            <div class="contact-image5">
+              <img
+                alt="image"
+                src="club/home/home_display.png"
+                class="contact-image6"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="contact-section1">
+          <div class="contact-cube">
+            <div class="contact-top side"></div>
+            <div class="contact-front side"></div>
+            <div class="contact-left side"></div>
+          </div>
+          <a href="#M1" class="contact-link">
+            <main class="contact-banner">
+              <div class="contact-header1">
+                <h2 class="section-heading">Leave us a message-&gt;</h2>
+                <p class="contact-description section-description">
+                  Or ask us a question
+                </p>
+              </div>
+              <div class="contact-buttons1"></div>
+            </main>
+          </a>
+          <div id="M1" class="contact-container1">
+            <div class="contact-container2">
+              <div class="contact-container3">
+                <div class="contact-container4">
+                  <div class="contact-container5">
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      class="contact-textinput input"
+                    />
+                    <input
+                      type="text"
+                      placeholder="E-Mail Id"
+                      class="contact-textinput1 input"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Subject"
+                    class="contact-textinput2 input"
+                  />
+                </div>
+                <input
+                  type="text"
+                  placeholder="Message"
+                  class="contact-textinput3 input"
+                />
+              </div>
+            </div>
+          </div>
+          <button class="contact-button button">Send Message</button>
+        </section>
+        <section class="contact-section2">
+          <div class="contact-cube1">
+            <div class="contact-top1 side"></div>
+            <div class="contact-front1 side"></div>
+            <div class="contact-left1 side"></div>
+          </div>
+          <main class="contact-pricing">
+            <header class="contact-header2">
+              <header class="contact-left2">
+                <span class="section-head">Quote of the day</span>
+                <h2 class="section-heading contact-heading2">
+                  Start small, think big
+                </h2>
+              </header>
+              <div class="contact-right">
+                <p class="contact-paragraph section-description">
+                  Hope is the light that keeps us going, even in the darkest of
+                  times. Never let it fade away.
+                </p>
+              </div>
+            </header>
+          </main>
+          <div class="contact-help">
+            <span class="contact-text5">
+              <span>Need any help?</span>
+              <br />
+            </span>
+            <div class="contact-contact-support">
+              <a
+                href="mailto:roboticsclubvitc@gmail.com?subject=Regarding Questions and Help"
+                class="contact-link1"
+              >
+                <p class="contact-text8">Contact Us -&gt;</p>
+              </a>
+            </div>
+          </div>
+        </section>
+        <footer class="footer-footer">
+          <div class="footer-content">
+            <main class="footer-main-content">
+              <div class="footer-content1">
+                <header class="footer-main">
+                  <div class="footer-header">
+                    <img
+                      alt="image"
+                      src="public/SectionImages/clunb-removebg-preview-200h.png"
+                      class="footer-branding"
+                    />
+                    <span class="footer-text">
+                      <span>
+                        The only Official Website of Robotics Club VIT Chennai
+                      </span>
+                    </span>
+                  </div>
+                  <div class="footer-socials">
+                    <a
+                      href="https://www.linkedin.com/company/robotics-club-vitc/?lipi=urn%3Ali%3Apage%3Acompanies_company_index%3B07f210d1-1d23-4de2-bcc9-09964095266a"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="footer-link"
+                    >
+                      <img
+                        alt="image"
+                        src="public/Icons/linkedin-200h.png"
+                        class="social"
+                      />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/robotics_club_vitc/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="footer-link1"
+                    >
+                      <img
+                        alt="image"
+                        src="public/Icons/instagram-200h.png"
+                        class="social"
+                      />
+                    </a>
+                    <a
+                      href="https://www.facebook.com/VITCCRoboticsClub?mibextid=ZbWKwL"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="footer-link2"
+                    >
+                      <svg viewBox="0 0 1024 1024" class="footer-icon">
+                        <path
+                          d="M608 192h160v-192h-160c-123.514 0-224 100.486-224 224v96h-128v192h128v512h192v-512h160l32-192h-192v-96c0-17.346 14.654-32 32-32z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </header>
+                <header class="footer-categories">
+                  <div class="footer-category">
+                    <div class="footer-header1">
+                      <span class="footer-header">
+                        <span>Institution</span>
+                      </span>
+                    </div>
+                    <div class="footer-links">
+                      <a
+                        href="https://chennai.vit.ac.in/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="footer-text02 footer-link"
+                      >
+                        <span>Official Website</span>
+                      </a>
+                      <a
+                        href="https://youtube.com/@VITChennaic"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="footer-text03 footer-link"
+                      >
+                        <span>YouTube</span>
+                      </a>
+                      <a
+                        href="https://chennai.vit.ac.in/campus/studentchapters_clubs/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="footer-text04 footer-link"
+                      >
+                        <span>Clubs And Chapters</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="footer-category1">
+                    <div class="footer-header2">
+                      <span class="footer-header"><span>Club</span></span>
+                    </div>
+                    <div class="footer-links1">
+                      <a href="about.html" class="footer-text06 footer-link">
+                        <span>About</span>
+                      </a>
+                      <a href="explore.html" class="footer-text07 footer-link">
+                        <span>Team</span>
+                      </a>
+                      <a href="blog.html" class="footer-text08 footer-link">
+                        <span>Posts</span>
+                      </a>
+                      <a href="contact.html" class="footer-text09 footer-link">
+                        <span>Special Teams</span>
+                      </a>
+                    </div>
+                  </div>
+                </header>
+              </div>
+              <section class="footer-copyright">
+                <span class="footer-text10">
+                  <span>
+                    © 2023 Website Designed by Anas Jawed. All Rights Reserved.
+                  </span>
+                </span>
+              </section>
+            </main>
+            <main class="footer-subscribe">
+              <main class="footer-main1">
+                <h1 class="footer-heading">
+                  <span>Recruitment for the Club</span>
+                </h1>
+                <div class="footer-input-field">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    class="footer-textinput input"
+                  />
+                  <a
+                    href="mailto:roboticsclubvitc@gmail.com?subject=Regarding the recruitment in the Club"
+                    class="footer-link3"
+                  >
+                    <div class="footer-buy button">
+                      <span class="footer-text11"><span>-&gt;</span></span>
+                      <span class="footer-text12">Mail Us</span>
+                    </div>
+                  </a>
+                </div>
+              </main>
+              <h1 class="footer-notice">
+                <span>
+                  Please send your details and a brief introduction about
+                  yourself including interested departments for consideration.
+                </span>
+              </h1>
+            </main>
+            <section class="footer-copyright1">
+              <span class="footer-text13">
+                <span>
+                  © 2023 Website Designed by Anas Jawed. All Rights Reserved.
+                </span>
+              </span>
+            </section>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

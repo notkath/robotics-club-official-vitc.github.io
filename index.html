@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Club Official</title>
+    <meta property="og:title" content="Club Official" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/robo.jpeg"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html@0.1.12/dist/default/lib.umd.js"
+      ></script>
+      <link href="./home.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <nav class="navbar-navbar navbar-root-class-name">
+          <a href="index.html" class="navbar-navlink">
+            <img
+              alt="Planical7012"
+              src="public/SectionImages/clunb-removebg-preview-300h.png"
+              class="navbar-branding-logo"
+            />
+          </a>
+          <div class="navbar-nav-content">
+            <div class="navbar-nav-links">
+              <a href="about.html" class="navbar-link nav-link">About</a>
+              <a href="gallery.html" class="navbar-link1 nav-link">Gallery</a>
+              <a href="explore.html" class="navbar-link2 nav-link">Team</a>
+              <a href="contact.html" class="navbar-link3 nav-link">Contact</a>
+            </div>
+            <a href="blog.html" class="navbar-navlink1">
+              <div class="navbar-get-started get-started">
+                <span class="navbar-text">Blog Page</span>
+              </div>
+            </a>
+            <div id="open-mobile-menu" class="navbar-hamburger get-started">
+              <img
+                alt="image"
+                src="public/Icons/hamburger-200h.png"
+                class="navbar-image"
+              />
+            </div>
+          </div>
+          <div id="mobile-menu" class="navbar-mobile-menu">
+            <div class="navbar-branding">
+              <img
+                alt="image"
+                src="public/Branding/planical7012-ttpb.svg"
+                class="navbar-image1"
+              />
+              <div id="close-mobile-menu" class="navbar-container">
+                <svg viewBox="0 0 1024 1024" class="navbar-icon">
+                  <path
+                    d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="navbar-nav-links1">
+              <span class="nav-link">Features</span>
+              <span class="nav-link">Why us</span>
+              <span class="nav-link">Prices</span>
+              <span class="nav-link">Contact</span>
+            </div>
+            <div class="get-started">
+              <span class="navbar-text1">Get started</span>
+            </div>
+          </div>
+          <div>
+            <dangerous-html
+              html="<script>
+    /*
+Mobile menu - Code Embed
+*/
+
+/* listenForUrlChangesMobileMenu() makes sure that if you changes pages inside your app, 
+the mobile menu will still work*/
+
+const listenForUrlChangesMobileMenu = () => {
+    let url = location.href;
+    document.body.addEventListener('click', () => {
+        requestAnimationFrame(() => {
+            if (url !== location.href) {
+                runMobileMenuCodeEmbed();
+                url = location.href;
+            }
+        });
+    },
+    true
+    );
+};
+
+const runMobileMenuCodeEmbed = () => {
+    // Mobile menu
+    const mobileMenu = document.querySelector('#mobile-menu')
+
+    // Buttons
+    const closeButton = document.querySelector('#close-mobile-menu')
+    const openButton = document.querySelector('#open-mobile-menu')
+
+    // On openButton click, set the mobileMenu position left to -100vw
+    openButton &amp;&amp; openButton.addEventListener('click', function() {
+        mobileMenu.style.transform = 'translateX(0%)'
+    })
+
+    // On closeButton click, set the mobileMenu position to 0vw
+    closeButton &amp;&amp; closeButton.addEventListener('click', function() {
+        mobileMenu.style.transform = 'translateX(100%)'
+    })
+}
+
+runMobileMenuCodeEmbed()
+listenForUrlChangesMobileMenu()
+</script>"
+            ></dangerous-html>
+          </div>
+        </nav>
+        <section class="home-section">
+          <div class="home-hero">
+            <div class="home-content">
+              <main class="home-main">
+                <header class="home-header">
+                  <h1 class="home-heading">
+                    <span class="home-text">Robotics Club</span>
+                    <br />
+                    <span>Vit Chennai</span>
+                    <br />
+                  </h1>
+                  <span class="home-caption">
+                    Innovation is when Imagination meets Ambition
+                  </span>
+                </header>
+                <div class="home-buttons">
+                  <a href="industries.html" class="home-navlink">
+                    <div class="home-get-started button">
+                      <span class="home-text04">Industrial Reach</span>
+                    </div>
+                  </a>
+                </div>
+              </main>
+              <div class="home-highlight">
+                <div class="home-avatars">
+                  <img
+                    alt="image"
+                    src="club/people/Harsh_Pandey.JPG"
+                    class="home-image avatar"
+                  />
+                  <img
+                    alt="image"
+                    src="club/people/arokya.jpg"
+                    class="home-image01 avatar"
+                  />
+                  <img
+                    alt="image"
+                    src="club/people/akash.jpg"
+                    class="home-image02 avatar"
+                  />
+                </div>
+                <a href="explore.html" class="home-navlink1">
+                  <label class="home-caption1">
+                    Managed and Controlled by 100+ Members
+                  </label>
+                </a>
+              </div>
+            </div>
+            <div class="home-image03">
+              <img
+                alt="image"
+                src="club/home/home_display.png"
+                class="home-image04"
+              />
+            </div>
+            <div class="home-image05">
+              <img
+                alt="image"
+                src="club/home/home_display.png"
+                class="home-image04"
+                class="home-image06"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="home-section01">
+          <h2 class="home-text05">Know More About The Club</h2>
+          <div class="home-note">
+            <div class="home-content1">
+              <main class="home-main1">
+                <h2 class="home-heading01">
+                  Our Small step would be a giant leap in robotics education.
+                </h2>
+                <p class="home-paragraph">
+                  At the Robotics Club, we firmly believe that every small step
+                  we take towards robotics education can have a significant
+                  impact on the future of the field. By educating and inspiring
+                  the next generation of engineers, we are contributing to the
+                  advancement of technology and the growth of innovation. Our
+                  workshops, events, and projects aim to equip individuals with
+                  the skills and knowledge needed to make a real difference in
+                  the world of robotics. We are proud to be a part of this
+                  transformative journey, and we believe that every
+                  contribution, no matter how small, can lead to a giant leap in
+                  the field of robotics education.
+                </p>
+              </main>
+              <a href="about.html" class="home-navlink2">
+                <div class="home-explore-more">
+                  <p class="home-text06">Explore more -&gt;</p>
+                </div>
+              </a>
+            </div>
+            <div class="home-image07">
+              <img
+                alt="image"
+                src="club/home/robot.webp"
+                class="home-image08"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="home-section02">
+          <header class="home-header01">
+            <h2 class="home-text07">About the Special Teams</h2>
+            <span class="home-text08">
+              We Together create projects and Provide excellence creating best
+              of all
+            </span>
+          </header>
+          <section class="home-note1">
+            <div class="home-image09">
+              <img
+                alt="image"
+                src="club/home/atom.webp"
+                class="home-image10"
+              />
+            </div>
+            <div class="home-content2">
+              <div class="home-main2">
+                <div class="home-caption2">
+                  <span class="home-section03 section-head">Team atom</span>
+                </div>
+                <div class="home-heading02">
+                  <h2 class="section-heading">
+                    One team, One heart, One legacy
+                  </h2>
+                  <p class="section-description">
+                    ATOM Robotics is an intelligent robotics and space
+                    exploration team at VIT Chennai, comprising 40+ passionate
+                    students from multiple diverse branches of study, unified by
+                    their common, unconditional passion for Robotics. As a team,
+                    we focus on acting as a platform for young, aspiring minds
+                    to prosper in said field.
+                  </p>
+                </div>
+              </div>
+              <a
+                href="https://atomrobotics.github.io/"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link"
+              >
+                <div class="home-get-started1 button">
+                  <span class="home-text09">Official WebPage</span>
+                </div>
+              </a>
+            </div>
+          </section>
+        </section>
+        <section class="home-section04">
+          <header class="home-header02">
+            <header class="home-left">
+              <span class="home-section05 section-head">Upcoming Events</span>
+              <h2 class="section-heading">Save the Date: Upcoming Events</h2>
+            </header>
+            <div class="home-right">
+              <p class="home-paragraph2 section-description">
+                Stay informed and get ready to participate in our exciting
+                upcoming events. Mark your calendar and join us for a memorable
+                experience.
+              </p>
+            </div>
+          </header>
+          <main class="home-cards">
+            <section class="card-card card-root-class-name">
+              <div class="card-container">
+                <img
+                  alt="image"
+                  src="club/home/aurdiuno.jpg"
+                  class="card-image"
+                />
+              </div>
+              <main class="card-content">
+                <h1 class="card-header"><span>Rev Up Arduino Lv3</span></h1>
+                <p class="card-description">
+                  <span>
+                    Unlock the potential of electronics and learn to build your
+                    own projects at our upcoming Arduino workshop. Join us and
+                    discover the possibilities of this versatile platform.
+                  </span>
+                </p>
+              </main>
+            </section>
+            <section class="card-card card-root-class-name1">
+              <div class="card-container">
+                <img
+                  alt="image"
+                  src="club/home/aurdiuno.jpg"
+                  class="card-image"
+                />
+              </div>
+              <main class="card-content">
+                <h1 class="card-header"><span>Rev Up Arduino Lv2</span></h1>
+                <p class="card-description">
+                  <span>
+                    Unlock the potential of electronics and learn to build your
+                    own projects at our upcoming Arduino workshop. Join us and
+                    discover the possibilities of this versatile platform.
+                  </span>
+                </p>
+              </main>
+            </section>
+            <section class="card-card card-root-class-name2">
+              <div class="card-container">
+                <img
+                  alt="image"
+                  src="club/home/aurdiuno.jpg"
+                  class="card-image"
+                />
+              </div>
+              <main class="card-content">
+                <h1 class="card-header"><span>Rev Up Arduino Lv1</span></h1>
+                <p class="card-description">
+                  <span>
+                    Unlock the potential of electronics and learn to build your
+                    own projects at our upcoming Arduino workshop. Join us and
+                    discover the possibilities of this versatile platform.
+                  </span>
+                </p>
+              </main>
+            </section>
+          </main>
+        </section>
+        <section class="home-section06">
+          <section class="home-note2">
+            <div class="home-image11">
+              <img
+                alt="image"
+                src="club/home/achievements.jpg"
+                class="home-image12"
+              />
+            </div>
+            <div class="home-content3">
+              <main class="home-main3">
+                <header class="home-caption3">
+                  <span class="home-section07 section-head">Achievements</span>
+                </header>
+                <main class="home-heading05">
+                  <header class="home-header03">
+                    <h2 class="section-heading">
+                      Breaking boundaries through our exceptional performance.
+                    </h2>
+                    <p class="section-description">
+                      Have a look over our achievements and certification
+                    </p>
+                  </header>
+                  <div class="home-checkmarks">
+                    <div class="mark-mark">
+                      <div class="mark-icon">
+                        <svg viewBox="0 0 1024 1024" class="mark-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <p class="mark-label"><span>From the Club</span></p>
+                    </div>
+                    <div class="mark-mark">
+                      <div class="mark-icon">
+                        <svg viewBox="0 0 1024 1024" class="mark-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <p class="mark-label">
+                        <span>From the Special Teams</span>
+                      </p>
+                    </div>
+                    <div class="mark-mark">
+                      <div class="mark-icon">
+                        <svg viewBox="0 0 1024 1024" class="mark-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <p class="mark-label">
+                        <span>From the Faculty Coordinator</span>
+                      </p>
+                    </div>
+                  </div>
+                </main>
+              </main>
+              <a href="achievements.html" class="home-navlink3">
+                <div class="home-get-started2 button">
+                  <span class="home-text10">Achievements</span>
+                </div>
+              </a>
+            </div>
+          </section>
+        </section>
+        <section class="home-section08">
+          <div class="home-cube">
+            <div class="home-top side"></div>
+            <div class="home-front side"></div>
+            <div class="home-left1 side"></div>
+          </div>
+          <main class="home-banner">
+            <div class="home-header04">
+              <h2 class="section-heading">Be a Part of our Special Teams</h2>
+              <p class="home-description section-description">
+                Mail Us regarding Your Concern related to recruitment in special
+                teams with complete details.
+              </p>
+            </div>
+            <div class="home-buttons1">
+              <a
+                href="mailto:roboticsclubvitc@gmail.com?subject=Regarding Special Teams Recruitment"
+                class="home-link1"
+              >
+                <div class="home-get-started3 button">
+                  <span class="home-text11">Mails Us</span>
+                </div>
+              </a>
+            </div>
+          </main>
+        </section>
+        <section class="home-section09">
+          <div class="home-cube1">
+            <div class="home-top1 side"></div>
+            <div class="home-front1 side"></div>
+            <div class="home-left2 side"></div>
+          </div>
+          <main class="home-pricing">
+            <header class="home-header05">
+              <header class="home-left3">
+                <span class="section-head">Quote of the day</span>
+                <h2 class="section-heading home-heading08">
+                  Start small, think big
+                </h2>
+              </header>
+              <div class="home-right1">
+                <p class="home-paragraph4 section-description">
+                  Hope is the light that keeps us going, even in the darkest of
+                  times. Never let it fade away.
+                </p>
+              </div>
+            </header>
+          </main>
+          <div class="home-help">
+            <span class="home-text12">
+              <span>Need any help?</span>
+              <br />
+            </span>
+            <div class="home-contact-support">
+              <a href="contact.html" class="home-navlink4">
+                <p class="home-text15">Contact Us -&gt;</p>
+              </a>
+            </div>
+          </div>
+        </section>
+        <h2 class="section-heading home-heading09">Discover Our Activeness</h2>
+        <section class="home-section11">
+          <div class="home-stats">
+            <div class="home-stat">
+              <h1 class="home-text16">
+                <span>150</span>
+                <span>+</span>
+              </h1>
+              <span class="home-text19">Members</span>
+            </div>
+            <div class="home-stat1">
+              <h1 class="home-text20">75+</h1>
+              <span class="home-text21">Projects completed</span>
+            </div>
+            <div class="home-stat2">
+              <h1 class="home-text22">2</h1>
+              <span class="home-text23">Times Best Club Award</span>
+            </div>
+            <div class="home-stat3">
+              <h1 class="home-text24">10+</h1>
+              <span class="home-text25">
+                <span class="home-text26">Undergoing Projects</span>
+                <br />
+                <br />
+              </span>
+            </div>
+          </div>
+        </section>
+        <section class="home-section12">
+          <header class="home-header06">
+            <header class="home-left4">
+              <span class="section-head">Testimonials</span>
+              <h2 class="home-heading10 section-heading">
+                What people say about us
+              </h2>
+            </header>
+            <div class="home-right2">
+              <p class="home-paragraph5 section-description">
+                "Discover What Our Members Have to Say: Testimonials from
+                Passionate Robotics Enthusiasts"
+              </p>
+            </div>
+          </header>
+          <main class="home-cards1">
+            <div class="home-container1">
+              <section class="review-card review-root-class-name">
+                <div class="review-stars">
+                  <svg viewBox="0 0 1024 1024" class="review-icon">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon02">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon04">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon06">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon08">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path>
+                  </svg>
+                </div>
+                <main class="review-content">
+                  <p class="review-quote">
+                    <span>
+                      "The Robotics Club has truly impressed me with their
+                      innovative projects and dedication to advancing the field
+                      of robotics. As a social media enthusiast, I have enjoyed
+                      following their updates and seeing the incredible work
+                      they do. The club's impact extends beyond their members,
+                      as they inspire and educate others about the possibilities
+                      of automation. It's great to see such a talented and
+                      passionate group of individuals making a difference in the
+                      world."
+                    </span>
+                  </p>
+                  <div class="review-author">
+                    <img
+                      alt="image"
+                      src="club/people/Yash_Srivastava.jpg"
+                      class="review-avatar"
+                    />
+                    <div class="review-details">
+                      <h1 class="review-author1">
+                        <span>Yash Srivastava</span>
+                      </h1>
+                      <label class="review-position">
+                        <span>FFCs Member</span>
+                      </label>
+                    </div>
+                  </div>
+                </main>
+              </section>
+              <section class="review-card review-root-class-name">
+                <div class="review-stars">
+                  <svg viewBox="0 0 1024 1024" class="review-icon">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon02">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon04">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon06">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon08">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path>
+                  </svg>
+                </div>
+                <main class="review-content">
+                  <p class="review-quote">
+                    <span>
+                      "As the marketing head for the Robotics Club, I am
+                      constantly impressed by the club's innovative projects and
+                      passionate members. Their dedication to advancing the
+                      field of robotics and promoting education is truly
+                      inspiring. Through effective marketing strategies and
+                      social media outreach, we have been able to showcase the
+                      club's achievements and impact to a wider audience. It's
+                      been an honor to work with such a talented and motivated
+                      group of individuals who are making a real difference in
+                      the world of robotics."
+                    </span>
+                  </p>
+                  <div class="review-author">
+                    <img
+                      alt="image"
+                      src="club/people/godavari.jpg"
+                      class="review-avatar"
+                    />
+                    <div class="review-details">
+                      <h1 class="review-author1">
+                        <span>Godavari Tanmayi</span>
+                      </h1>
+                      <label class="review-position">
+                        <span>Marketing Head</span>
+                      </label>
+                    </div>
+                  </div>
+                </main>
+              </section>
+            </div>
+            <div class="home-container2">
+              <section class="review-card review-root-class-name">
+                <div class="review-stars">
+                  <svg viewBox="0 0 1024 1024" class="review-icon">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon02">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon04">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon06">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon08">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path>
+                  </svg>
+                </div>
+                <main class="review-content">
+                  <p class="review-quote">
+                    <span>
+                      "As a finance member of the Robotics Club, I have been
+                      impressed by the club's ability to balance their passion
+                      for robotics with their financial responsibility. The
+                      club's leadership has shown a keen understanding of
+                      budgeting and financial management, which has allowed them
+                      to pursue ambitious projects while remaining fiscally
+                      responsible. I am proud to be a part of an organization
+                      that values both innovation and financial stability."
+                    </span>
+                  </p>
+                  <div class="review-author">
+                    <img
+                      alt="image"
+                      src="club/people/pranav.jpg"
+                      class="review-avatar"
+                    />
+                    <div class="review-details">
+                      <h1 class="review-author1"><span>Pranav Shinde</span></h1>
+                      <label class="review-position">
+                        <span>FFCs Member</span>
+                      </label>
+                    </div>
+                  </div>
+                </main>
+              </section>
+              <section class="review-card review-root-class-name">
+                <div class="review-stars">
+                  <svg viewBox="0 0 1024 1024" class="review-icon">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon02">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon04">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon06">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon08">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path>
+                  </svg>
+                </div>
+                <main class="review-content">
+                  <p class="review-quote">
+                    <span>
+                      "As a design member of the Robotics Club, I have enjoyed
+                      contributing my skills to create visually appealing and
+                      user-friendly interfaces for the club's projects. The
+                      club's commitment to innovation and excellence has
+                      motivated me to constantly push my creative limits and
+                      produce work that exceeds expectations. The collaboration
+                      and support within the club have allowed me to learn and
+                      grow as a designer. I am grateful for the opportunity to
+                      be a part of such a talented and dedicated team."
+                    </span>
+                  </p>
+                  <div class="review-author">
+                    <img
+                      alt="image"
+                      src="club/people/teerth.jpg"
+                      class="review-avatar"
+                    />
+                    <div class="review-details">
+                      <h1 class="review-author1">
+                        <span>Teerth Ekanth Shetty</span>
+                      </h1>
+                      <label class="review-position">
+                        <span>Design department Member</span>
+                      </label>
+                    </div>
+                  </div>
+                </main>
+              </section>
+            </div>
+            <div class="home-container3">
+              <section class="review-card review-root-class-name">
+                <div class="review-stars">
+                  <svg viewBox="0 0 1024 1024" class="review-icon">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon02">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon04">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon06">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon08">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path>
+                  </svg>
+                </div>
+                <main class="review-content">
+                  <p class="review-quote">
+                    <span>
+                      "As a teaching department member, I have had the privilege
+                      of witnessing the positive impact that the Robotics Club
+                      has on its members. The club's dedication to providing
+                      quality education and hands-on learning opportunities has
+                      resulted in students who are passionate, knowledgeable,
+                      and skilled in robotics. The club's commitment to
+                      innovation and collaboration has allowed them to foster an
+                      environment that encourages growth and excellence. I am
+                      honored to support an organization that is making a real
+                      difference in the lives of its members and the field of
+                      robotics education."
+                    </span>
+                  </p>
+                  <div class="review-author">
+                    <img
+                      alt="image"
+                      src="club/people/Yusra_Israr.jpg"
+                      class="review-avatar"
+                    />
+                    <div class="review-details">
+                      <h1 class="review-author1"><span>Yusra Israr</span></h1>
+                      <label class="review-position">
+                        <span>Technical Department Member</span>
+                      </label>
+                    </div>
+                  </div>
+                </main>
+              </section>
+              <section class="review-card review-root-class-name">
+                <div class="review-stars">
+                  <svg viewBox="0 0 1024 1024" class="review-icon">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon02">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon04">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon06">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path></svg
+                  ><svg viewBox="0 0 1024 1024" class="review-icon08">
+                    <path
+                      d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                    ></path>
+                  </svg>
+                </div>
+                <main class="review-content">
+                  <p class="review-quote">
+                    <span>
+                      "Joining the Robotics Club has been one of the best
+                      decisions I've made. Not only did I gain valuable
+                      knowledge about robotics and automation, but I also found
+                      a community of passionate and supportive individuals. The
+                      club has helped me develop my technical skills and build
+                      lasting connections with like-minded peers. I would highly
+                      recommend it to anyone interested in robotics or
+                      engineering."
+                    </span>
+                  </p>
+                  <div class="review-author">
+                    <img
+                      alt="image"
+                      src="club/people/Ashutosh_Dubey.jpeg"
+                      class="review-avatar"
+                    />
+                    <div class="review-details">
+                      <h1 class="review-author1">
+                        <span>Ashutosh Dubey</span>
+                      </h1>
+                      <label class="review-position">
+                        <span>FFCs Member</span>
+                      </label>
+                    </div>
+                  </div>
+                </main>
+              </section>
+            </div>
+          </main>
+          <div class="home-view-more"><p class="home-text29">View more</p></div>
+        </section>
+        <section class="home-section14">
+          <header class="home-header07">
+            <span class="section-head">Stay linked with us</span>
+            <h2 class="home-heading11 section-heading">
+              Engage with Our LinkedIn Feed for Club Insights and Updates
+            </h2>
+          </header>
+          <main class="home-cards2">
+            <section class="article-card article-root-class-name">
+              <main class="article-content">
+                <div class="article-container">
+                  <div class="article-container1">
+                    <div class="article-container2">
+                      <header class="article-header">
+                        <h1 class="article-header1">
+                          <span>Make-A-Thon</span>
+                        </h1>
+                      </header>
+                    </div>
+                  </div>
+                </div>
+                <svg viewBox="0 0 1024 1024" class="article-icon">
+                  <path
+                    d="M384 384h177.106v90.782h2.532c24.64-44.194 84.958-90.782 174.842-90.782 186.946 0 221.52 116.376 221.52 267.734v308.266h-184.61v-273.278c0-65.184-1.334-149.026-96.028-149.026-96.148 0-110.82 70.986-110.82 144.292v278.012h-184.542v-576z"
+                  ></path>
+                  <path d="M64 384h192v576h-192v-576z"></path>
+                  <path
+                    d="M256 224c0 53.019-42.981 96-96 96s-96-42.981-96-96c0-53.019 42.981-96 96-96s96 42.981 96 96z"
+                  ></path>
+                </svg>
+                <p class="article-description">
+                  <span>
+                    Thrilled to announce the successful completion of our
+                    workshop and m......
+                  </span>
+                </p>
+                <div class="article-button">
+                  <a
+                    href="https://www.linkedin.com/posts/robotics-club-vitc_workshop-makeathon-success-activity-7044726928573919233-SVAO?utm_source=share&amp;utm_medium=member_desktop"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="article-link"
+                  >
+                    <p class="article-text"><span>Read -&gt;</span></p>
+                  </a>
+                </div>
+              </main>
+            </section>
+            <section class="article-card article-root-class-name">
+              <main class="article-content">
+                <div class="article-container">
+                  <div class="article-container1">
+                    <div class="article-container2">
+                      <header class="article-header">
+                        <h1 class="article-header1">
+                          <span>About The Club</span>
+                        </h1>
+                      </header>
+                    </div>
+                  </div>
+                </div>
+                <svg viewBox="0 0 1024 1024" class="article-icon">
+                  <path
+                    d="M384 384h177.106v90.782h2.532c24.64-44.194 84.958-90.782 174.842-90.782 186.946 0 221.52 116.376 221.52 267.734v308.266h-184.61v-273.278c0-65.184-1.334-149.026-96.028-149.026-96.148 0-110.82 70.986-110.82 144.292v278.012h-184.542v-576z"
+                  ></path>
+                  <path d="M64 384h192v576h-192v-576z"></path>
+                  <path
+                    d="M256 224c0 53.019-42.981 96-96 96s-96-42.981-96-96c0-53.019 42.981-96 96-96s96 42.981 96 96z"
+                  ></path>
+                </svg>
+                <p class="article-description">
+                  <span>
+                    Experience the future of technology with our Robotics Club's
+                    latest .....
+                  </span>
+                </p>
+                <div class="article-button">
+                  <a
+                    href="https://www.linkedin.com/posts/robotics-club-vitc_experience-the-future-of-technology-with-activity-7045637542481727488-PjOn?utm_source=share&amp;utm_medium=member_desktop"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="article-link"
+                  >
+                    <p class="article-text"><span>Read -&gt;</span></p>
+                  </a>
+                </div>
+              </main>
+            </section>
+            <section class="article-card article-root-class-name">
+              <main class="article-content">
+                <div class="article-container">
+                  <div class="article-container1">
+                    <div class="article-container2">
+                      <header class="article-header">
+                        <h1 class="article-header1"><span>Robo Expo</span></h1>
+                      </header>
+                    </div>
+                  </div>
+                </div>
+                <svg viewBox="0 0 1024 1024" class="article-icon">
+                  <path
+                    d="M384 384h177.106v90.782h2.532c24.64-44.194 84.958-90.782 174.842-90.782 186.946 0 221.52 116.376 221.52 267.734v308.266h-184.61v-273.278c0-65.184-1.334-149.026-96.028-149.026-96.148 0-110.82 70.986-110.82 144.292v278.012h-184.542v-576z"
+                  ></path>
+                  <path d="M64 384h192v576h-192v-576z"></path>
+                  <path
+                    d="M256 224c0 53.019-42.981 96-96 96s-96-42.981-96-96c0-53.019 42.981-96 96-96s96 42.981 96 96z"
+                  ></path>
+                </svg>
+                <p class="article-description">
+                  <span>
+                    From The school Of Mechanical Engineering with SEDAXIS and
+                    Robotics Club
+                  </span>
+                </p>
+                <div class="article-button">
+                  <a
+                    href="https://www.linkedin.com/posts/arockia-selvakumar-arockia-doss-13804455_robo-expo-2023-robotics-club-vit-chennai-activity-7049431983231283200-U9lw?utm_source=share&amp;utm_medium=member_desktop"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="article-link"
+                  >
+                    <p class="article-text"><span>Read -&gt;</span></p>
+                  </a>
+                </div>
+              </main>
+            </section>
+          </main>
+        </section>
+        <section class="home-section16">
+          <header class="home-header08">
+            <span class="home-section17 section-head">FAQ</span>
+            <h2 class="home-heading12 section-heading">
+              Frequently asked questions
+            </h2>
+          </header>
+          <main class="home-accordion">
+            <div class="faq-accordion faq-root-class-name">
+              <div
+                data-role="accordion-container"
+                class="faq-element accordion-element"
+              >
+                <div class="faq-details">
+                  <span class="faq-text">
+                    <span>
+                      What is the Robotics Club, and what activities do you
+                      participate in?
+                    </span>
+                    <br />
+                  </span>
+                  <span data-role="accordion-content" class="faq-text03">
+                    The robotics club is a gathering of like minded individuals
+                    focused on honing their skills in robotics and spreading
+                    knowledge about this field through events and seminars. We
+                    participate in events with our own unique robots made by the
+                    club members or we host events where we spread knowledge
+                    about various aspects of robotics
+                  </span>
+                </div>
+                <div data-role="accordion-icon" class="faq-icons"></div>
+              </div>
+              <div
+                data-role="accordion-container"
+                class="faq-element1 accordion-element"
+              >
+                <div class="faq-details1">
+                  <span class="faq-text04">
+                    <br />
+                    <span>
+                      Can anyone join the Robotics Club, regardless of their
+                      prior experience or knowledge in robotics?
+                    </span>
+                    <br />
+                  </span>
+                  <span data-role="accordion-content" class="faq-text08">
+                    <span>
+                      Yes! We enthusiastically welcome all who are interested in
+                      actively participating in any of our events. "Even
+                      teachers were once students "
+                    </span>
+                    <br />
+                    <br />
+                  </span>
+                </div>
+                <div data-role="accordion-icon" class="faq-icons1"></div>
+              </div>
+              <div
+                data-role="accordion-container"
+                class="faq-element2 accordion-element"
+              >
+                <div class="faq-details2">
+                  <span class="faq-text12">
+                    <span>
+                      What types of robotics projects or competitions does the
+                      club engage in?
+                    </span>
+                    <br />
+                  </span>
+                  <span data-role="accordion-content" class="faq-text15">
+                    <span>
+                      The club has its own special teams or FFCS teams who are
+                      each working on a project. The types of projects are
+                      Limitless as long it's of a sound base. The club
+                      participates in competitions even at an international
+                      level which also means we do not limit ourselves to any
+                      level when it comes to competitions
+                    </span>
+                    <br />
+                    <span></span>
+                  </span>
+                </div>
+                <div data-role="accordion-icon" class="faq-icons2"></div>
+              </div>
+              <div
+                data-role="accordion-container"
+                class="faq-element3 accordion-element"
+              >
+                <div class="faq-details3">
+                  <span class="faq-text19">
+                    Do I need to have my own robotics kit or equipment to
+                    participate in the club activities?
+                  </span>
+                  <span data-role="accordion-content" class="faq-text20">
+                    <span>
+                      In most cases one wouldn't need to buy their own equipment
+                      if they are participating in events but if it's a project
+                      then it might be worked out of pocket which would require
+                      some equipment in advance
+                    </span>
+                    <br />
+                  </span>
+                </div>
+                <div data-role="accordion-icon" class="faq-icons3"></div>
+              </div>
+              <div
+                data-role="accordion-container"
+                class="faq-element4 accordion-element"
+              >
+                <div class="faq-details4">
+                  <span class="faq-text23">
+                    <span>
+                      Are there any mentorship programs or opportunities for
+                      members to learn from experienced individuals in the
+                      field?
+                    </span>
+                    <br />
+                  </span>
+                  <span data-role="accordion-content" class="faq-text26">
+                    <span>
+                      Our faculty coordinator Dr Arockiasamy S has many
+                      connections in this field. We also have a deeply rooted
+                      network of alumni of this club who are always willing to
+                      help. There are also regular bootcamps hosted to help
+                      develop the level of members in this club
+                    </span>
+                    <br />
+                    <span></span>
+                  </span>
+                </div>
+                <div data-role="accordion-icon" class="faq-icons4"></div>
+              </div>
+              <div
+                data-role="accordion-container"
+                class="faq-element5 accordion-element"
+              >
+                <div class="faq-details5">
+                  <span class="faq-text30">
+                    <span>
+                      How can I get involved in leadership roles within the
+                      Robotics Club?
+                    </span>
+                    <br />
+                  </span>
+                  <span data-role="accordion-content" class="faq-text33">
+                    <span>
+                      If one is active enough in the club and can prove to the
+                      leads or the board their worth and vision in the clubs
+                      future, they would be selected as leads during the next
+                      time they are recruiting for such roles
+                    </span>
+                    <br />
+                  </span>
+                </div>
+                <div data-role="accordion-icon" class="faq-icons5"></div>
+              </div>
+              <div
+                data-role="accordion-container"
+                class="faq-element6 accordion-element"
+              >
+                <div class="faq-details6">
+                  <span class="faq-text36">
+                    <br />
+                    <span>
+                      Can the Robotics Club help me pursue a career in robotics
+                      or engineering?
+                    </span>
+                    <br />
+                  </span>
+                  <span data-role="accordion-content" class="faq-text40">
+                    Certainly! The Robotics Club offers opportunities to gain
+                    practical skills, knowledge, and networking connections that
+                    can greatly benefit your pursuit of a career in
+                    robotics&nbsp;or&nbsp;engineering.
+                  </span>
+                </div>
+                <div data-role="accordion-icon" class="faq-icons6"></div>
+              </div>
+            </div>
+          </main>
+        </section>
+        <section class="home-section18">
+          <main class="home-content4">
+            <header class="home-header09">
+              <h2 class="home-heading13 section-heading">
+                Robotics Enthusiastic? Connect with us Now.
+              </h2>
+              <div class="home-buttons2">
+                <a
+                  href="https://www.linkedin.com/company/robotics-club-vitc/?lipi=urn%3Ali%3Apage%3Acompanies_company_index%3B07f210d1-1d23-4de2-bcc9-09964095266a"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-link2"
+                >
+                  <div class="home-ios button">
+                    <span class="home-text30">LinkedIn</span>
+                    <svg viewBox="0 0 1024 1024" class="home-icon">
+                      <path
+                        d="M928 0h-832c-52.8 0-96 43.2-96 96v832c0 52.8 43.2 96 96 96h832c52.8 0 96-43.2 96-96v-832c0-52.8-43.2-96-96-96zM384 832h-128v-448h128v448zM320 320c-35.4 0-64-28.6-64-64s28.6-64 64-64c35.4 0 64 28.6 64 64s-28.6 64-64 64zM832 832h-128v-256c0-35.4-28.6-64-64-64s-64 28.6-64 64v256h-128v-448h128v79.4c26.4-36.2 66.8-79.4 112-79.4 79.6 0 144 71.6 144 160v288z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a
+                  href="https://www.instagram.com/robotics_club_vitc/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-link3"
+                >
+                  <div class="home-android button">
+                    <span class="home-text31">Instagram</span>
+                    <svg viewBox="0 0 1024 1024" class="home-icon2">
+                      <path
+                        d="M512 92.2c136.8 0 153 0.6 206.8 3 50 2.2 77 10.6 95 17.6 23.8 9.2 41 20.4 58.8 38.2 18 18 29 35 38.4 58.8 7 18 15.4 45.2 17.6 95 2.4 54 3 70.2 3 206.8s-0.6 153-3 206.8c-2.2 50-10.6 77-17.6 95-9.2 23.8-20.4 41-38.2 58.8-18 18-35 29-58.8 38.4-18 7-45.2 15.4-95 17.6-54 2.4-70.2 3-206.8 3s-153-0.6-206.8-3c-50-2.2-77-10.6-95-17.6-23.8-9.2-41-20.4-58.8-38.2-18-18-29-35-38.4-58.8-7-18-15.4-45.2-17.6-95-2.4-54-3-70.2-3-206.8s0.6-153 3-206.8c2.2-50 10.6-77 17.6-95 9.2-23.8 20.4-41 38.2-58.8 18-18 35-29 58.8-38.4 18-7 45.2-15.4 95-17.6 53.8-2.4 70-3 206.8-3zM512 0c-139 0-156.4 0.6-211 3-54.4 2.4-91.8 11.2-124.2 23.8-33.8 13.2-62.4 30.6-90.8 59.2-28.6 28.4-46 57-59.2 90.6-12.6 32.6-21.4 69.8-23.8 124.2-2.4 54.8-3 72.2-3 211.2s0.6 156.4 3 211c2.4 54.4 11.2 91.8 23.8 124.2 13.2 33.8 30.6 62.4 59.2 90.8 28.4 28.4 57 46 90.6 59 32.6 12.6 69.8 21.4 124.2 23.8 54.6 2.4 72 3 211 3s156.4-0.6 211-3c54.4-2.4 91.8-11.2 124.2-23.8 33.6-13 62.2-30.6 90.6-59s46-57 59-90.6c12.6-32.6 21.4-69.8 23.8-124.2 2.4-54.6 3-72 3-211s-0.6-156.4-3-211c-2.4-54.4-11.2-91.8-23.8-124.2-12.6-34-30-62.6-58.6-91-28.4-28.4-57-46-90.6-59-32.6-12.6-69.8-21.4-124.2-23.8-54.8-2.6-72.2-3.2-211.2-3.2v0z"
+                      ></path>
+                      <path
+                        d="M512 249c-145.2 0-263 117.8-263 263s117.8 263 263 263 263-117.8 263-263c0-145.2-117.8-263-263-263zM512 682.6c-94.2 0-170.6-76.4-170.6-170.6s76.4-170.6 170.6-170.6c94.2 0 170.6 76.4 170.6 170.6s-76.4 170.6-170.6 170.6z"
+                      ></path>
+                      <path
+                        d="M846.8 238.6c0 33.91-27.49 61.4-61.4 61.4s-61.4-27.49-61.4-61.4c0-33.91 27.49-61.4 61.4-61.4s61.4 27.49 61.4 61.4z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </header>
+            <img
+              alt="image"
+              src="club/home/lastrobo.webp"
+              class="home-image13"
+            />
+          </main>
+        </section>
+        <footer class="footer-footer">
+          <div class="footer-content">
+            <main class="footer-main-content">
+              <div class="footer-content1">
+                <header class="footer-main">
+                  <div class="footer-header">
+                    <img
+                      alt="image"
+                      src="public/SectionImages/clunb-removebg-preview-200h.png"
+                      class="footer-branding"
+                    />
+                    <span class="footer-text">
+                      <span>
+                        The only Official Website of Robotics Club VIT Chennai
+                      </span>
+                    </span>
+                  </div>
+                  <div class="footer-socials">
+                    <a
+                      href="https://www.linkedin.com/company/robotics-club-vitc/?lipi=urn%3Ali%3Apage%3Acompanies_company_index%3B07f210d1-1d23-4de2-bcc9-09964095266a"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="footer-link"
+                    >
+                      <img
+                        alt="image"
+                        src="public/Icons/linkedin-200h.png"
+                        class="social"
+                      />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/robotics_club_vitc/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="footer-link1"
+                    >
+                      <img
+                        alt="image"
+                        src="public/Icons/instagram-200h.png"
+                        class="social"
+                      />
+                    </a>
+                    <a
+                      href="https://www.facebook.com/VITCCRoboticsClub?mibextid=ZbWKwL"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="footer-link2"
+                    >
+                      <svg viewBox="0 0 1024 1024" class="footer-icon">
+                        <path
+                          d="M608 192h160v-192h-160c-123.514 0-224 100.486-224 224v96h-128v192h128v512h192v-512h160l32-192h-192v-96c0-17.346 14.654-32 32-32z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </header>
+                <header class="footer-categories">
+                  <div class="footer-category">
+                    <div class="footer-header1">
+                      <span class="footer-header">
+                        <span>Institution</span>
+                      </span>
+                    </div>
+                    <div class="footer-links">
+                      <a
+                        href="https://chennai.vit.ac.in/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="footer-text02 footer-link"
+                      >
+                        <span>Official Website</span>
+                      </a>
+                      <a
+                        href="https://youtube.com/@VITChennaic"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="footer-text03 footer-link"
+                      >
+                        <span>YouTube</span>
+                      </a>
+                      <a
+                        href="https://chennai.vit.ac.in/campus/studentchapters_clubs/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="footer-text04 footer-link"
+                      >
+                        <span>Clubs And Chapters</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="footer-category1">
+                    <div class="footer-header2">
+                      <span class="footer-header"><span>Club</span></span>
+                    </div>
+                    <div class="footer-links1">
+                      <a href="about.html" class="footer-text06 footer-link">
+                        <span>About</span>
+                      </a>
+                      <a href="explore.html" class="footer-text07 footer-link">
+                        <span>Team</span>
+                      </a>
+                      <a href="blog.html" class="footer-text08 footer-link">
+                        <span>Posts</span>
+                      </a>
+                      <a href="contact.html" class="footer-text09 footer-link">
+                        <span>Special Teams</span>
+                      </a>
+                    </div>
+                  </div>
+                </header>
+              </div>
+              <section class="footer-copyright">
+                <span class="footer-text10">
+                  <span>
+                    © 2023 Website Designed by Anas Jawed. All Rights Reserved.
+                  </span>
+                </span>
+              </section>
+            </main>
+            <main class="footer-subscribe">
+              <main class="footer-main1">
+                <h1 class="footer-heading">
+                  <span>Recruitment for the Club</span>
+                </h1>
+                <div class="footer-input-field">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    class="footer-textinput input"
+                  />
+                  <a
+                    href="mailto:roboticsclubvitc@gmail.com?subject=Regarding the recruitment in the Club"
+                    class="footer-link3"
+                  >
+                    <div class="footer-buy button">
+                      <span class="footer-text11"><span>-&gt;</span></span>
+                      <span class="footer-text12">Mail Us</span>
+                    </div>
+                  </a>
+                </div>
+              </main>
+              <h1 class="footer-notice">
+                <span>
+                  Please send your details and a brief introduction about
+                  yourself including interested departments for consideration.
+                </span>
+              </h1>
+            </main>
+            <section class="footer-copyright1">
+              <span class="footer-text13">
+                <span>
+                  © 2023 Website Designed by Anas Jawed. All Rights Reserved.
+                </span>
+              </span>
+            </section>
+          </div>
+        </footer>
+        <div>
+          <dangerous-html
+            html="<script>
+    /*
+Accordion - Code Embed
+*/
+
+/* listenForUrlChangesAccordion() makes sure that if you changes pages inside your app,
+the Accordions will still work*/
+
+const listenForUrlChangesAccordion = () => {
+      let url = location.href;
+      document.body.addEventListener(
+        'click',
+        () => {
+          requestAnimationFrame(() => {
+            if (url !== location.href) {
+              runAccordionCodeEmbed();
+              url = location.href;
+            }
+          });
+        },
+        true
+      );
+    };
+
+
+const runAccordionCodeEmbed = () => {
+    const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+    const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+    const accordionIcons = document.querySelectorAll('[data-role='accordion-icon']'); // All accordion icons
+
+    accordionContents.forEach((accordionContent) => {
+        accordionContent.style.display = 'none'; //Hides all accordion contents
+    });
+
+    accordionContainers.forEach((accordionContainer, index) => {
+        accordionContainer.addEventListener('click', () => {
+            accordionContents.forEach((accordionContent) => {
+            accordionContent.style.display = 'none'; //Hides all accordion contents
+            });
+
+            accordionIcons.forEach((accordionIcon) => {
+                accordionIcon.style.transform = 'rotate(0deg)'; // Resets all icon transforms to 0deg (default)
+            });
+
+            accordionContents[index].style.display = 'flex'; // Shows accordion content
+            accordionIcons[index].style.transform = 'rotate(180deg)'; // Rotates accordion icon 180deg
+        });
+    });
+}
+
+runAccordionCodeEmbed()
+listenForUrlChangesAccordion()
+
+/*
+Here's what the above is doing:
+    1. Selects all accordion containers, contents, and icons
+    2. Hides all accordion contents
+    3. Adds an event listener to each accordion container
+    4. When an accordion container is clicked, it:
+        - Hides all accordion contents
+        - Resets all icon transforms to 0deg (default)
+        - Checks if this container has class 'accordion-open'
+            - If it does, it removes class 'accordion-open'
+            - If it doesn't, it:
+                - Removes class 'accordion-open' from all containers
+                - Adds class 'accordion-open' to this container
+                - Shows accordion content
+                - Rotates accordion icon 180deg
+*/
+</script>"
+          ></dangerous-html>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

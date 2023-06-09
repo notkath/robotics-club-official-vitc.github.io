@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>post2 - Club Official</title>
+    <meta property="og:title" content="post2 - Club Official" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/robo.jpeg"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html@0.1.12/dist/default/lib.umd.js"
+      ></script>
+      <link href="./post2.css" rel="stylesheet" />
+
+      <div class="post2-container">
+        <nav class="navbar-navbar navbar-root-class-name8">
+          <a href="index.html" class="navbar-navlink">
+            <img
+              alt="Planical7012"
+              src="public/SectionImages/clunb-removebg-preview-300h.png"
+              class="navbar-branding-logo"
+            />
+          </a>
+          <div class="navbar-nav-content">
+            <div class="navbar-nav-links">
+              <a href="about.html" class="navbar-link nav-link">About</a>
+              <a href="gallery.html" class="navbar-link1 nav-link">Gallery</a>
+              <a href="explore.html" class="navbar-link2 nav-link">Team</a>
+              <a href="contact.html" class="navbar-link3 nav-link">Contact</a>
+            </div>
+            <a href="blog.html" class="navbar-navlink1">
+              <div class="navbar-get-started get-started">
+                <span class="navbar-text">Blog Page</span>
+              </div>
+            </a>
+            <div id="open-mobile-menu" class="navbar-hamburger get-started">
+              <img
+                alt="image"
+                src="public/Icons/hamburger-200h.png"
+                class="navbar-image"
+              />
+            </div>
+          </div>
+          <div id="mobile-menu" class="navbar-mobile-menu">
+            <div class="navbar-branding">
+              <img
+                alt="image"
+                src="public/Branding/planical7012-ttpb.svg"
+                class="navbar-image1"
+              />
+              <div id="close-mobile-menu" class="navbar-container">
+                <svg viewBox="0 0 1024 1024" class="navbar-icon">
+                  <path
+                    d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="navbar-nav-links1">
+              <span class="nav-link">Features</span>
+              <span class="nav-link">Why us</span>
+              <span class="nav-link">Prices</span>
+              <span class="nav-link">Contact</span>
+            </div>
+            <div class="get-started">
+              <span class="navbar-text1">Get started</span>
+            </div>
+          </div>
+          <div>
+            <dangerous-html
+              html="<script>
+    /*
+Mobile menu - Code Embed
+*/
+
+/* listenForUrlChangesMobileMenu() makes sure that if you changes pages inside your app, 
+the mobile menu will still work*/
+
+const listenForUrlChangesMobileMenu = () => {
+    let url = location.href;
+    document.body.addEventListener('click', () => {
+        requestAnimationFrame(() => {
+            if (url !== location.href) {
+                runMobileMenuCodeEmbed();
+                url = location.href;
+            }
+        });
+    },
+    true
+    );
+};
+
+const runMobileMenuCodeEmbed = () => {
+    // Mobile menu
+    const mobileMenu = document.querySelector('#mobile-menu')
+
+    // Buttons
+    const closeButton = document.querySelector('#close-mobile-menu')
+    const openButton = document.querySelector('#open-mobile-menu')
+
+    // On openButton click, set the mobileMenu position left to -100vw
+    openButton &amp;&amp; openButton.addEventListener('click', function() {
+        mobileMenu.style.transform = 'translateX(0%)'
+    })
+
+    // On closeButton click, set the mobileMenu position to 0vw
+    closeButton &amp;&amp; closeButton.addEventListener('click', function() {
+        mobileMenu.style.transform = 'translateX(100%)'
+    })
+}
+
+runMobileMenuCodeEmbed()
+listenForUrlChangesMobileMenu()
+</script>"
+            ></dangerous-html>
+          </div>
+        </nav>
+        <section class="post2-section">
+          <div class="post2-hero">
+            <div class="post2-content">
+              <main class="post2-main">
+                <header class="post2-header">
+                  <h1 class="post2-heading">
+                    <span class="post2-text">Robotics Club</span>
+                    <br />
+                    <span>Vit Chennai</span>
+                    <br />
+                  </h1>
+                  <span class="post2-caption">
+                    Innovation is when Imagination meets Ambition
+                  </span>
+                </header>
+                <div class="post2-buttons">
+                  <a href="index.html" class="post2-navlink">
+                    <div class="post2-get-started button">
+                      <span class="post2-text04">&lt;-Home Page</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="post2-highlight">
+                  <div class="post2-avatars">
+                    <img
+                      alt="image"
+                      src="club/people/Harsh_Pandey.JPG"
+                      class="post2-image avatar"
+                    />
+                    <img
+                      alt="image"
+                      src="club/people/arokya.jpg"
+                      class="post2-image1 avatar"
+                    />
+                    <img
+                      alt="image"
+                      src="club/people/akash.jpg"
+                      class="post2-image2 avatar"
+                    />
+                  </div>
+                  <a href="explore.html" class="post2-navlink1">
+                    <label class="post2-caption1">
+                      Managed and Controlled by 100+ Members
+                    </label>
+                  </a>
+                </div>
+              </main>
+            </div>
+            <div class="post2-image3">
+              <img
+                alt="image"
+                src="club/home/home_display.png"
+                class="post2-image4"
+              />
+            </div>
+            <div class="post2-image5">
+              <img
+                alt="image"
+                src="club/home/home_display.png"
+                class="post2-image6"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="post2-section1">
+          <div class="post2-cube">
+            <div class="post2-top side"></div>
+            <div class="post2-front side"></div>
+            <div class="post2-left side"></div>
+          </div>
+          <div class="post2-hero1">
+            <div class="post2-container1">
+              <h1 class="post2-text05">
+                Redefining Boundaries: Exploring Lucrative Career Opportunities
+                in Robotics
+              </h1>
+              <span class="post2-text06">
+                <span>
+                  Introduction: In today's rapidly advancing world, robotics has
+                  emerged as a field that redefines boundaries, revolutionizing
+                  industries and opening up a plethora of exciting career
+                  opportunities. From automation and artificial intelligence to
+                  cutting-edge technological innovations, the realm of robotics
+                  offers a dynamic and fulfilling path for individuals
+                  passionate about pushing limits and reshaping the future. Join
+                  us as we delve into the captivating world of robotics careers
+                  and discover the vast potential that awaits.
+                </span>
+                <br />
+                <br />
+                <span>Unleashing Creativity and Innovation:</span>
+                <br />
+                <span>
+                  Robotics careers empower individuals to unleash their
+                  creativity and drive innovation. As a robotics professional,
+                  you have the chance to redefine boundaries, designing and
+                  developing intelligent machines that break through existing
+                  limitations and bring groundbreaking ideas to life.
+                </span>
+                <br />
+                <br />
+                <span>Driving Technological Advancement:</span>
+                <br />
+                <span>
+                  At the forefront of technological advancement, robotics
+                  professionals play a pivotal role in driving innovation and
+                  redefining what is possible. Whether it's developing
+                  autonomous vehicles, humanoid robots, or smart home systems,
+                  these experts contribute to shaping a technologically advanced
+                  society and pushing the boundaries of human capability.
+                </span>
+                <br />
+                <br />
+                <span>Solving Real-World Challenges:</span>
+                <br />
+                <span>
+                  Robotics careers offer the opportunity to tackle real-world
+                  challenges across various industries, transcending
+                  conventional limits. From improving healthcare outcomes with
+                  robotic surgery to optimizing manufacturing processes through
+                  automation, the potential to make a meaningful impact and
+                  redefine boundaries is immense.
+                </span>
+                <br />
+                <br />
+                <span>Conclusion:</span>
+                <br />
+                <span>
+                  In the realm of robotics, a world of lucrative career
+                  opportunities awaits those with a passion for pushing limits
+                  and redefining boundaries. Unleash your creativity, dive into
+                  the realm of technological advancement, and contribute to
+                  solving real-world challenges in ways that challenge the
+                  status quo. Embrace the exciting possibilities that robotics
+                  careers have to offer and embark on a rewarding journey where
+                  you can redefine boundaries and shape the future of robotics.
+                </span>
+              </span>
+              <div class="post2-btn-group">
+                <button class="post2-button button">Get Started</button>
+                <button class="post2-button1 button">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="post2-section2">
+          <div class="post2-cube1">
+            <div class="post2-top1 side"></div>
+            <div class="post2-front1 side"></div>
+            <div class="post2-left1 side"></div>
+          </div>
+          <main class="post2-pricing">
+            <header class="post2-header1">
+              <header class="post2-left2">
+                <span class="section-head">Quote of the day</span>
+                <h2 class="section-heading post2-heading1">
+                  Start small, think big
+                </h2>
+              </header>
+              <div class="post2-right">
+                <p class="post2-paragraph section-description">
+                  Hope is the light that keeps us going, even in the darkest of
+                  times. Never let it fade away.
+                </p>
+              </div>
+            </header>
+          </main>
+          <div class="post2-help">
+            <span class="post2-text28">
+              <span>Need any help?</span>
+              <br />
+            </span>
+            <div class="post2-contact-support">
+              <a
+                href="mailto:roboticsclubvitc@gmail.com?subject=Regarding Questions and Help"
+                class="post2-link"
+              >
+                <p class="post2-text31">Contact Us -&gt;</p>
+              </a>
+            </div>
+          </div>
+        </section>
+        <footer class="footer-footer">
+          <div class="footer-content">
+            <main class="footer-main-content">
+              <div class="footer-content1">
+                <header class="footer-main">
+                  <div class="footer-header">
+                    <img
+                      alt="image"
+                      src="public/SectionImages/clunb-removebg-preview-200h.png"
+                      class="footer-branding"
+                    />
+                    <span class="footer-text">
+                      <span>
+                        The only Official Website of Robotics Club VIT Chennai
+                      </span>
+                    </span>
+                  </div>
+                  <div class="footer-socials">
+                    <a
+                      href="https://www.linkedin.com/company/robotics-club-vitc/?lipi=urn%3Ali%3Apage%3Acompanies_company_index%3B07f210d1-1d23-4de2-bcc9-09964095266a"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="footer-link"
+                    >
+                      <img
+                        alt="image"
+                        src="public/Icons/linkedin-200h.png"
+                        class="social"
+                      />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/robotics_club_vitc/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="footer-link1"
+                    >
+                      <img
+                        alt="image"
+                        src="public/Icons/instagram-200h.png"
+                        class="social"
+                      />
+                    </a>
+                    <a
+                      href="https://www.facebook.com/VITCCRoboticsClub?mibextid=ZbWKwL"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="footer-link2"
+                    >
+                      <svg viewBox="0 0 1024 1024" class="footer-icon">
+                        <path
+                          d="M608 192h160v-192h-160c-123.514 0-224 100.486-224 224v96h-128v192h128v512h192v-512h160l32-192h-192v-96c0-17.346 14.654-32 32-32z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </header>
+                <header class="footer-categories">
+                  <div class="footer-category">
+                    <div class="footer-header1">
+                      <span class="footer-header">
+                        <span>Institution</span>
+                      </span>
+                    </div>
+                    <div class="footer-links">
+                      <a
+                        href="https://chennai.vit.ac.in/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="footer-text02 footer-link"
+                      >
+                        <span>Official Website</span>
+                      </a>
+                      <a
+                        href="https://youtube.com/@VITChennaic"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="footer-text03 footer-link"
+                      >
+                        <span>YouTube</span>
+                      </a>
+                      <a
+                        href="https://chennai.vit.ac.in/campus/studentchapters_clubs/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="footer-text04 footer-link"
+                      >
+                        <span>Clubs And Chapters</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="footer-category1">
+                    <div class="footer-header2">
+                      <span class="footer-header"><span>Club</span></span>
+                    </div>
+                    <div class="footer-links1">
+                      <a href="about.html" class="footer-text06 footer-link">
+                        <span>About</span>
+                      </a>
+                      <a href="explore.html" class="footer-text07 footer-link">
+                        <span>Team</span>
+                      </a>
+                      <a href="blog.html" class="footer-text08 footer-link">
+                        <span>Posts</span>
+                      </a>
+                      <a href="contact.html" class="footer-text09 footer-link">
+                        <span>Special Teams</span>
+                      </a>
+                    </div>
+                  </div>
+                </header>
+              </div>
+              <section class="footer-copyright">
+                <span class="footer-text10">
+                  <span>
+                    © 2023 Website Designed by Anas Jawed. All Rights Reserved.
+                  </span>
+                </span>
+              </section>
+            </main>
+            <main class="footer-subscribe">
+              <main class="footer-main1">
+                <h1 class="footer-heading">
+                  <span>Recruitment for the Club</span>
+                </h1>
+                <div class="footer-input-field">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    class="footer-textinput input"
+                  />
+                  <a
+                    href="mailto:roboticsclubvitc@gmail.com?subject=Regarding the recruitment in the Club"
+                    class="footer-link3"
+                  >
+                    <div class="footer-buy button">
+                      <span class="footer-text11"><span>-&gt;</span></span>
+                      <span class="footer-text12">Mail Us</span>
+                    </div>
+                  </a>
+                </div>
+              </main>
+              <h1 class="footer-notice">
+                <span>
+                  Please send your details and a brief introduction about
+                  yourself including interested departments for consideration.
+                </span>
+              </h1>
+            </main>
+            <section class="footer-copyright1">
+              <span class="footer-text13">
+                <span>
+                  © 2023 Website Designed by Anas Jawed. All Rights Reserved.
+                </span>
+              </span>
+            </section>
+          </div>
+        </footer>
+        <div>
+          <dangerous-html
+            html="<script>
+    /*
+Accordion - Code Embed
+*/
+
+/* listenForUrlChangesAccordion() makes sure that if you changes pages inside your app,
+the Accordions will still work*/
+
+const listenForUrlChangesAccordion = () => {
+      let url = location.href;
+      document.body.addEventListener(
+        'click',
+        () => {
+          requestAnimationFrame(() => {
+            if (url !== location.href) {
+              runAccordionCodeEmbed();
+              url = location.href;
+            }
+          });
+        },
+        true
+      );
+    };
+
+
+const runAccordionCodeEmbed = () => {
+    const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+    const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+    const accordionIcons = document.querySelectorAll('[data-role='accordion-icon']'); // All accordion icons
+
+    accordionContents.forEach((accordionContent) => {
+        accordionContent.style.display = 'none'; //Hides all accordion contents
+    });
+
+    accordionContainers.forEach((accordionContainer, index) => {
+        accordionContainer.addEventListener('click', () => {
+            accordionContents.forEach((accordionContent) => {
+            accordionContent.style.display = 'none'; //Hides all accordion contents
+            });
+
+            accordionIcons.forEach((accordionIcon) => {
+                accordionIcon.style.transform = 'rotate(0deg)'; // Resets all icon transforms to 0deg (default)
+            });
+
+            accordionContents[index].style.display = 'flex'; // Shows accordion content
+            accordionIcons[index].style.transform = 'rotate(180deg)'; // Rotates accordion icon 180deg
+        });
+    });
+}
+
+runAccordionCodeEmbed()
+listenForUrlChangesAccordion()
+
+/*
+Here's what the above is doing:
+    1. Selects all accordion containers, contents, and icons
+    2. Hides all accordion contents
+    3. Adds an event listener to each accordion container
+    4. When an accordion container is clicked, it:
+        - Hides all accordion contents
+        - Resets all icon transforms to 0deg (default)
+        - Checks if this container has class 'accordion-open'
+            - If it does, it removes class 'accordion-open'
+            - If it doesn't, it:
+                - Removes class 'accordion-open' from all containers
+                - Adds class 'accordion-open' to this container
+                - Shows accordion content
+                - Rotates accordion icon 180deg
+*/
+</script>"
+          ></dangerous-html>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

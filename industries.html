@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>industries - Club Official</title>
+    <meta property="og:title" content="industries - Club Official" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/robo.jpeg"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html@0.1.12/dist/default/lib.umd.js"
+      ></script>
+      <link href="./industries.css" rel="stylesheet" />
+
+      <div class="industries-container">
+        <nav class="navbar-navbar navbar-root-class-name11">
+          <a href="index.html" class="navbar-navlink">
+            <img
+              alt="Planical7012"
+              src="public/SectionImages/clunb-removebg-preview-300h.png"
+              class="navbar-branding-logo"
+            />
+          </a>
+          <div class="navbar-nav-content">
+            <div class="navbar-nav-links">
+              <a href="about.html" class="navbar-link nav-link">About</a>
+              <a href="gallery.html" class="navbar-link1 nav-link">Gallery</a>
+              <a href="explore.html" class="navbar-link2 nav-link">Team</a>
+              <a href="contact.html" class="navbar-link3 nav-link">Contact</a>
+            </div>
+            <a href="blog.html" class="navbar-navlink1">
+              <div class="navbar-get-started get-started">
+                <span class="navbar-text">Blog Page</span>
+              </div>
+            </a>
+            <div id="open-mobile-menu" class="navbar-hamburger get-started">
+              <img
+                alt="image"
+                src="public/Icons/hamburger-200h.png"
+                class="navbar-image"
+              />
+            </div>
+          </div>
+          <div id="mobile-menu" class="navbar-mobile-menu">
+            <div class="navbar-branding">
+              <img
+                alt="image"
+                src="public/Branding/planical7012-ttpb.svg"
+                class="navbar-image1"
+              />
+              <div id="close-mobile-menu" class="navbar-container">
+                <svg viewBox="0 0 1024 1024" class="navbar-icon">
+                  <path
+                    d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="navbar-nav-links1">
+              <span class="nav-link">Features</span>
+              <span class="nav-link">Why us</span>
+              <span class="nav-link">Prices</span>
+              <span class="nav-link">Contact</span>
+            </div>
+            <div class="get-started">
+              <span class="navbar-text1">Get started</span>
+            </div>
+          </div>
+          <div>
+            <dangerous-html
+              html="<script>
+    /*
+Mobile menu - Code Embed
+*/
+
+/* listenForUrlChangesMobileMenu() makes sure that if you changes pages inside your app, 
+the mobile menu will still work*/
+
+const listenForUrlChangesMobileMenu = () => {
+    let url = location.href;
+    document.body.addEventListener('click', () => {
+        requestAnimationFrame(() => {
+            if (url !== location.href) {
+                runMobileMenuCodeEmbed();
+                url = location.href;
+            }
+        });
+    },
+    true
+    );
+};
+
+const runMobileMenuCodeEmbed = () => {
+    // Mobile menu
+    const mobileMenu = document.querySelector('#mobile-menu')
+
+    // Buttons
+    const closeButton = document.querySelector('#close-mobile-menu')
+    const openButton = document.querySelector('#open-mobile-menu')
+
+    // On openButton click, set the mobileMenu position left to -100vw
+    openButton &amp;&amp; openButton.addEventListener('click', function() {
+        mobileMenu.style.transform = 'translateX(0%)'
+    })
+
+    // On closeButton click, set the mobileMenu position to 0vw
+    closeButton &amp;&amp; closeButton.addEventListener('click', function() {
+        mobileMenu.style.transform = 'translateX(100%)'
+    })
+}
+
+runMobileMenuCodeEmbed()
+listenForUrlChangesMobileMenu()
+</script>"
+            ></dangerous-html>
+          </div>
+        </nav>
+        <section class="industries-section">
+          <div class="industries-hero">
+            <div class="industries-content">
+              <main class="industries-main">
+                <header class="industries-header">
+                  <h1 class="industries-heading">
+                    <span class="industries-text">Robotics Club</span>
+                    <br />
+                    <span>Vit Chennai</span>
+                    <br />
+                  </h1>
+                  <span class="industries-caption">
+                    Innovation is when Imagination meets Ambition
+                  </span>
+                </header>
+                <div class="industries-buttons">
+                  <a href="index.html" class="industries-navlink">
+                    <div class="industries-get-started button">
+                      <span class="industries-text04">&lt;-Home Page</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="industries-highlight">
+                  <div class="industries-avatars">
+                    <img
+                      alt="image"
+                      src="club/people/Harsh_Pandey.JPG"
+                      class="industries-image avatar"
+                    />
+                    <img
+                      alt="image"
+                      src="club/people/arokya.jpg"
+                      class="industries-image01 avatar"
+                    />
+                    <img
+                      alt="image"
+                      src="club/people/akash.jpg"
+                      class="industries-image02 avatar"
+                    />
+                  </div>
+                  <a href="explore.html" class="industries-navlink1">
+                    <label class="industries-caption1">
+                      Managed and Controlled by 100+ Members
+                    </label>
+                  </a>
+                </div>
+              </main>
+            </div>
+            <div class="industries-image03">
+              <img
+                alt="image"
+                src="club/achievements/achieve.png"
+                class="industries-image04"
+              />
+            </div>
+            <div class="industries-image05">
+              <img
+                alt="image"
+                src="public/home_display-1500h.png"
+                class="industries-image06"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="industries-section1">
+          <h2 class="industries-text05">Our Industrial Reach</h2>
+          <div class="industries-note">
+            <div class="industries-content1">
+              <main class="industries-main1">
+                <h2 class="industries-heading01">Jet Aerospace</h2>
+                <p class="industries-paragraph">
+                  Jet Aerospace is the one and only Aerospace Organization
+                  providing complete solutions for all requirements in academics
+                  and industries under Aerospace &amp; Aviation Sector. We
+                  outsource high quality products and equipment for Government
+                  Tenders and UAV/Drone Lab Setup &amp; Requirements. We have
+                  partnered with IHFC - Technology Innovation Hub of IIT Delhi
+                  for establishing Innovation Center - Drone Technology Park and
+                  Technology Transfer collaboration with Anna University (Govt
+                  of Tamil Nadu State University). We are Affiliated &amp;
+                  Accredited as In-House R&amp;D Unit by Aeronautical Sector
+                  Skill Council (ASSC), ISRO-IIRS Outreach Program Nodal Center,
+                  International Accredited Organization (IAI) &amp; ISO
+                  9001:2015 Certified, Govt. Registered under GST, TIN, CST,
+                  TAN, MSME, NSIC, Kerala Trade, Indian Bureau of Immigration
+                  FRO / FRRO C&amp;S Form.
+                </p>
+              </main>
+              <div class="industries-explore-more">
+                <a
+                  href="http://www.jetaero.in/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="industries-link"
+                >
+                  <p class="industries-text06">Explore more -&gt;</p>
+                </a>
+              </div>
+            </div>
+            <div class="industries-image07">
+              <img
+                alt="image"
+                src="club/industries/jet aero.jpg"
+                class="industries-image08"
+              />
+            </div>
+          </div>
+          <div class="industries-note1">
+            <div class="industries-content2">
+              <main class="industries-main2">
+                <h2 class="industries-heading02">Alstruct India</h2>
+                <p class="industries-paragraph1">
+                  Alstrut is an fast growing Indian company in the field of
+                  material handling range of products with our assembly
+                  technology products with alstrut brand, which includes
+                  aluminium extrusion profiles and accessories used for machine
+                  building, pipes and joints for building FIFO racks, trolleys,
+                  we have widely executed projects in various industries such as
+                  FMCG, packing solutions, modular type conveyors, automation of
+                  the assembly work stations and packing lines, conveyors,
+                  trolleys, bin racks etc.
+                </p>
+              </main>
+              <div class="industries-explore-more1">
+                <a
+                  href="https://www.tradeindia.com/Seller-1394131-ALSTRUT-INDIA-PVT-LTD-/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="industries-link1"
+                >
+                  <p class="industries-text07">Explore more -&gt;</p>
+                </a>
+              </div>
+            </div>
+            <div class="industries-image09">
+              <img
+                alt="image"
+                src="club/industries/alstruct.jpg"
+                class="industries-image10"
+              />
+            </div>
+          </div>
+          <div class="industries-note2">
+            <div class="industries-content3">
+              <main class="industries-main3">
+                <h2 class="industries-heading03">Unbox Robotics</h2>
+                <p class="industries-paragraph2">
+                  Unbox Robotics is a leading supply chain robotics technology
+                  company, specializing in robotics-based fulfilment and
+                  distribution technology for small to large e-commerce, retail
+                  and logistics enterprises. Unbox Robotics’ cutting edge
+                  technology solutions accelerates the parcel sortation and
+                  order fulfilment to facilitate efficient express logistics
+                  operations delivering seamless end customer experience.
+                </p>
+              </main>
+              <div class="industries-explore-more2">
+                <a
+                  href="https://unboxrobotics.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="industries-link2"
+                >
+                  <p class="industries-text08">Explore more -&gt;</p>
+                </a>
+              </div>
+            </div>
+            <div class="industries-image11">
+              <img
+                alt="image"
+                src="club/industries/UNBOX_LOGO_dark.png"
+                class="industries-image12"
+              />
+            </div>
+          </div>
+          <div class="industries-note3">
+            <div class="industries-content4">
+              <main class="industries-main4">
+                <h2 class="industries-heading04">Prag Robotics</h2>
+                <p class="industries-paragraph3">
+                  <span class="industries-text09">
+                    Prag Robotics a team of expert professionals combined with
+                    its judicious engineering workforce, providing
+                    techno‑education to Schools &amp; Colleges and process
+                    enhancement solutions and technological services to
+                    industries. Prag Robotics very quickly established a mark in
+                    manufacturing and academic circles because we don’t just
+                    preach but adopt a consultative personalized approach, that
+                    our customers Love.
+                  </span>
+                  <br />
+                  <span class="industries-text11">
+                    Our ‘T-bridge’, a unique learning platform, constructed with
+                    the industry recommended skills &amp; needs, facilitate the
+                    travel between “Students-Employers”, seamlessly.
+                  </span>
+                </p>
+              </main>
+              <div class="industries-explore-more3">
+                <a
+                  href="https://www.pragrobotics.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="industries-link3"
+                >
+                  <p class="industries-text12">Explore more -&gt;</p>
+                </a>
+              </div>
+            </div>
+            <div class="industries-image13">
+              <img
+                alt="image"
+                src="club/industries/prag.jpg"
+                class="industries-image14"
+              />
+            </div>
+          </div>
+          <div class="industries-note4">
+            <div class="industries-content5">
+              <main class="industries-main5">
+                <h2 class="industries-heading05">EPR LABS</h2>
+                <p class="industries-paragraph4">
+                  <span>
+                    Electric Power Research Laboratory, EPRLAB is a high-tech
+                    power electronics company that has been specialized on
+                    design, manufacturing and implementation of industrial
+                    electronic and power systems including Static VAr
+                    Compensation, STATCOM, harmonic filtering and custom design
+                    multidisciplinary solutions based on challenging power
+                    quality problems.
+                  </span>
+                  <br />
+                  <span>
+                    We utilize our high-tech designs based on continuous
+                    research, development and field tests that enables us to
+                    achieve highest product reliability while providing
+                    innovative solutions for the future leading edge designs.
+                  </span>
+                  <br />
+                  <span>
+                    Serving the power electronics and power quality industry
+                    with exceptional expertise and customer satisfaction, EPRLAB
+                    continues to be recognized for high-tech engineering,
+                    extensive experience, and commitment to excellence.
+                  </span>
+                </p>
+              </main>
+              <div class="industries-explore-more4">
+                <a
+                  href="http://www.eprlab.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="industries-link4"
+                >
+                  <p class="industries-text18">Explore more -&gt;</p>
+                </a>
+              </div>
+            </div>
+            <div class="industries-image15">
+              <img
+                alt="image"
+                src="club/industries/epr.jpg"
+                class="industries-image16"
+              />
+            </div>
+          </div>
+          <div class="industries-note5">
+            <div class="industries-content6">
+              <main class="industries-main6">
+                <h2 class="industries-heading06">Tezznova</h2>
+                <p class="industries-paragraph5">
+                  <span>
+                    TEZZNOVA started on 2019 are continually innovating a
+                    comprehensive range of products, systems and services that
+                    increase energy efficiency, reliability and productivity for
+                    our industrial and utility. Tezznova is an indian
+                    engineering, robotics design &amp; Innovative R&amp;D
+                    company based in Chennai, India.GST :33AZOPK1287G1Z8
+                  </span>
+                  <br class="industries-text20" />
+                  <br />
+                  <span>
+                    Tezznova is a team of expert professional entrepreneur’s
+                    with a vision to bring home the experience of Artificial
+                    intelligence and Robotics to you.We constantly involve in
+                    the Research and Development to provide customized products
+                    for Industrial and domestic purposes.
+                  </span>
+                </p>
+              </main>
+              <div class="industries-explore-more5">
+                <a
+                  href="https://www.indiamart.com/tezznova/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="industries-link5"
+                >
+                  <p class="industries-text23">Explore more -&gt;</p>
+                </a>
+              </div>
+            </div>
+            <div class="industries-image17">
+              <img
+                alt="image"
+                src="club/industries/tezz.webp"
+                class="industries-image18"
+              />
+            </div>
+          </div>
+          <div class="industries-note6">
+            <div class="industries-content7">
+              <main class="industries-main7">
+                <h2 class="industries-heading07">
+                  L&amp;T Technology Services
+                </h2>
+                <p class="industries-paragraph6">
+                  <span>
+                    L&amp;T Technology Services Limited (LTTS) is a global
+                    leader in Engineering and R&amp;D (ER&amp;D) services. With
+                    1033 patents filed for 57 of the Global Top 100 ER&amp;D
+                    spenders, LTTS lives and breathes engineering. Our
+                    innovations speak for themselves – World’s 1st Autonomous
+                    Welding Robot, Solar ‘Connectivity’ Drone, and the Smartest
+                    Campus in the World, to name a few.
+                  </span>
+                  <br />
+                  <span>
+                    LTTS’ expertise in engineering design, product development,
+                    smart manufacturing, and digitalization touches every area
+                    of human lives - from the moment one wakes up till the time
+                    one goes to bed. With 110 Innovation and R&amp;D design
+                    centers globally, we specialize in disruptive technology
+                    spaces such as 5G, Artificial Intelligence, Collaborative
+                    Robots, Digital Factory, and Autonomous Transport.
+                  </span>
+                </p>
+              </main>
+              <div class="industries-explore-more6">
+                <a
+                  href="https://www.ltts.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="industries-link6"
+                >
+                  <p class="industries-text27">Explore more -&gt;</p>
+                </a>
+              </div>
+            </div>
+            <div class="industries-image19">
+              <img
+                alt="image"
+                src="club/industries/lat.jpg"
+                class="industries-image20"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="industries-section2">
+          <div class="industries-cube">
+            <div class="industries-top side"></div>
+            <div class="industries-front side"></div>
+            <div class="industries-left side"></div>
+          </div>
+          <main class="industries-banner">
+            <div class="industries-header1">
+              <h2 class="section-heading">
+                Be the part of our splendid team.....!
+              </h2>
+              <p class="industries-description section-description">
+                Apply for the recruitment in the club.
+              </p>
+            </div>
+            <div class="industries-buttons1">
+              <a
+                href="mailto:roboticsclubvitc@gmail.com?subject=Regarding the recruitment in the club"
+                class="industries-link7"
+              >
+                <div class="industries-get-started1 button">
+                  <span class="industries-text28">Mail Us</span>
+                </div>
+              </a>
+            </div>
+          </main>
+        </section>
+        <section class="industries-section3">
+          <div class="industries-cube1">
+            <div class="industries-top1 side"></div>
+            <div class="industries-front1 side"></div>
+            <div class="industries-left1 side"></div>
+          </div>
+          <main class="industries-pricing">
+            <header class="industries-header2">
+              <header class="industries-left2">
+                <span class="section-head">Quote of the day</span>
+                <h2 class="section-heading industries-heading09">
+                  Start small, think big
+                </h2>
+              </header>
+              <div class="industries-right">
+                <p class="industries-paragraph7 section-description">
+                  Hope is the light that keeps us going, even in the darkest of
+                  times. Never let it fade away.
+                </p>
+              </div>
+            </header>
+          </main>
+          <div class="industries-help">
+            <span class="industries-text29">
+              <span>Need any help?</span>
+              <br />
+            </span>
+            <div class="industries-contact-support">
+              <a
+                href="mailto:roboticsclubvitc@gmail.com?subject=Regarding Questions and Help"
+                class="industries-link8"
+              >
+                <p class="industries-text32">Contact Us -&gt;</p>
+              </a>
+            </div>
+          </div>
+        </section>
+        <footer class="footer-footer">
+          <div class="footer-content">
+            <main class="footer-main-content">
+              <div class="footer-content1">
+                <header class="footer-main">
+                  <div class="footer-header">
+                    <img
+                      alt="image"
+                      src="public/SectionImages/clunb-removebg-preview-200h.png"
+                      class="footer-branding"
+                    />
+                    <span class="footer-text">
+                      <span>
+                        The only Official Website of Robotics Club VIT Chennai
+                      </span>
+                    </span>
+                  </div>
+                  <div class="footer-socials">
+                    <a
+                      href="https://www.linkedin.com/company/robotics-club-vitc/?lipi=urn%3Ali%3Apage%3Acompanies_company_index%3B07f210d1-1d23-4de2-bcc9-09964095266a"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="footer-link"
+                    >
+                      <img
+                        alt="image"
+                        src="public/Icons/linkedin-200h.png"
+                        class="social"
+                      />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/robotics_club_vitc/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="footer-link1"
+                    >
+                      <img
+                        alt="image"
+                        src="public/Icons/instagram-200h.png"
+                        class="social"
+                      />
+                    </a>
+                    <a
+                      href="https://www.facebook.com/VITCCRoboticsClub?mibextid=ZbWKwL"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="footer-link2"
+                    >
+                      <svg viewBox="0 0 1024 1024" class="footer-icon">
+                        <path
+                          d="M608 192h160v-192h-160c-123.514 0-224 100.486-224 224v96h-128v192h128v512h192v-512h160l32-192h-192v-96c0-17.346 14.654-32 32-32z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </header>
+                <header class="footer-categories">
+                  <div class="footer-category">
+                    <div class="footer-header1">
+                      <span class="footer-header">
+                        <span>Institution</span>
+                      </span>
+                    </div>
+                    <div class="footer-links">
+                      <a
+                        href="https://chennai.vit.ac.in/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="footer-text02 footer-link"
+                      >
+                        <span>Official Website</span>
+                      </a>
+                      <a
+                        href="https://youtube.com/@VITChennaic"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="footer-text03 footer-link"
+                      >
+                        <span>YouTube</span>
+                      </a>
+                      <a
+                        href="https://chennai.vit.ac.in/campus/studentchapters_clubs/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="footer-text04 footer-link"
+                      >
+                        <span>Clubs And Chapters</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="footer-category1">
+                    <div class="footer-header2">
+                      <span class="footer-header"><span>Club</span></span>
+                    </div>
+                    <div class="footer-links1">
+                      <a href="about.html" class="footer-text06 footer-link">
+                        <span>About</span>
+                      </a>
+                      <a href="explore.html" class="footer-text07 footer-link">
+                        <span>Team</span>
+                      </a>
+                      <a href="blog.html" class="footer-text08 footer-link">
+                        <span>Posts</span>
+                      </a>
+                      <a href="contact.html" class="footer-text09 footer-link">
+                        <span>Special Teams</span>
+                      </a>
+                    </div>
+                  </div>
+                </header>
+              </div>
+              <section class="footer-copyright">
+                <span class="footer-text10">
+                  <span>
+                    © 2023 Website Designed by Anas Jawed. All Rights Reserved.
+                  </span>
+                </span>
+              </section>
+            </main>
+            <main class="footer-subscribe">
+              <main class="footer-main1">
+                <h1 class="footer-heading">
+                  <span>Recruitment for the Club</span>
+                </h1>
+                <div class="footer-input-field">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    class="footer-textinput input"
+                  />
+                  <a
+                    href="mailto:roboticsclubvitc@gmail.com?subject=Regarding the recruitment in the Club"
+                    class="footer-link3"
+                  >
+                    <div class="footer-buy button">
+                      <span class="footer-text11"><span>-&gt;</span></span>
+                      <span class="footer-text12">Mail Us</span>
+                    </div>
+                  </a>
+                </div>
+              </main>
+              <h1 class="footer-notice">
+                <span>
+                  Please send your details and a brief introduction about
+                  yourself including interested departments for consideration.
+                </span>
+              </h1>
+            </main>
+            <section class="footer-copyright1">
+              <span class="footer-text13">
+                <span>
+                  © 2023 Website Designed by Anas Jawed. All Rights Reserved.
+                </span>
+              </span>
+            </section>
+          </div>
+        </footer>
+        <div>
+          <dangerous-html
+            html="<script>
+    /*
+Accordion - Code Embed
+*/
+
+/* listenForUrlChangesAccordion() makes sure that if you changes pages inside your app,
+the Accordions will still work*/
+
+const listenForUrlChangesAccordion = () => {
+      let url = location.href;
+      document.body.addEventListener(
+        'click',
+        () => {
+          requestAnimationFrame(() => {
+            if (url !== location.href) {
+              runAccordionCodeEmbed();
+              url = location.href;
+            }
+          });
+        },
+        true
+      );
+    };
+
+
+const runAccordionCodeEmbed = () => {
+    const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+    const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+    const accordionIcons = document.querySelectorAll('[data-role='accordion-icon']'); // All accordion icons
+
+    accordionContents.forEach((accordionContent) => {
+        accordionContent.style.display = 'none'; //Hides all accordion contents
+    });
+
+    accordionContainers.forEach((accordionContainer, index) => {
+        accordionContainer.addEventListener('click', () => {
+            accordionContents.forEach((accordionContent) => {
+            accordionContent.style.display = 'none'; //Hides all accordion contents
+            });
+
+            accordionIcons.forEach((accordionIcon) => {
+                accordionIcon.style.transform = 'rotate(0deg)'; // Resets all icon transforms to 0deg (default)
+            });
+
+            accordionContents[index].style.display = 'flex'; // Shows accordion content
+            accordionIcons[index].style.transform = 'rotate(180deg)'; // Rotates accordion icon 180deg
+        });
+    });
+}
+
+runAccordionCodeEmbed()
+listenForUrlChangesAccordion()
+
+/*
+Here's what the above is doing:
+    1. Selects all accordion containers, contents, and icons
+    2. Hides all accordion contents
+    3. Adds an event listener to each accordion container
+    4. When an accordion container is clicked, it:
+        - Hides all accordion contents
+        - Resets all icon transforms to 0deg (default)
+        - Checks if this container has class 'accordion-open'
+            - If it does, it removes class 'accordion-open'
+            - If it doesn't, it:
+                - Removes class 'accordion-open' from all containers
+                - Adds class 'accordion-open' to this container
+                - Shows accordion content
+                - Rotates accordion icon 180deg
+*/
+</script>"
+          ></dangerous-html>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
