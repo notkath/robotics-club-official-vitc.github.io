@@ -875,11 +875,11 @@
   align-self: center;
   transition: 0.3s;
   text-decoration: none;
-  background-color: var(--dl-color-success-500);
+  background-color: #80FF44;
 }
 .explore-navlink2:hover {
   color: var(--dl-color-gray-white);
-  background-color: #084e17;
+  background-color:#32A94C;
 }
 .explore-section03 {
   gap: var(--dl-space-space-sixunits);
