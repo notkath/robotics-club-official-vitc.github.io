@@ -235,6 +235,10 @@
   text-decoration: none;
 }
 
+img[src="club/home/home_display.png"]{
+  max-width:100vw;
+}
+
 @media(max-width: 767px) {
   .nav-link {
     color: black;
