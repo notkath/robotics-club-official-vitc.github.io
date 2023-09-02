@@ -1338,10 +1338,10 @@
   color: #7eff46;
 }
 .home-image03 {
-  top: 150px;
+  top: 20px;
   right: 0px;
-  width: 650px;
-  height: 900px;
+  width: 40vw;
+  height: 130vh;
   margin: auto;
   display: flex;
   position: absolute;
@@ -1352,7 +1352,7 @@
 .home-image04 {
   width: 624px;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .home-image05 {
   display: none;
