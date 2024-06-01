@@ -677,8 +677,8 @@
   top: 0px;
   left: 0px;
   right: 0px;
-  width: 425px;
-  height: 812px;
+  width: 300px;
+  height: 600px;
   margin: auto;
   z-index: 100;
   position: absolute;
@@ -738,16 +738,19 @@
   display: contents;
 }
 .contact-banner {
-  width: 100%;
+  width: 60%;
+  
   display: flex;
-  padding: var(--dl-space-space-fiveunits);
+  padding: var(--dl-space-space-threeunits);
   z-index: 50;
   max-width: 1200px;
+  min-width: 290px;
   align-items: center;
   border-radius: 20px;
   justify-content: space-between;
   text-decoration: none;
   background-color: #292929;
+  margin-right:auto;
 }
 .contact-header1 {
   gap: var(--dl-space-space-unit);
