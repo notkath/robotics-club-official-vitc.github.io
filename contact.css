@@ -703,19 +703,20 @@
   padding-left: var(--dl-space-space-oneandhalfunits);
   padding-right: var(--dl-space-space-oneandhalfunits);
   flex-direction: column;
+  
   padding-bottom: 120px;
   justify-content: center;
 }
 .contact-cube {
-  top: 20px;
-  left: 0px;
+  top: 400px;
+  left: 50px;
   width: 120px;
   height: 120px;
   display: flex;
-  position: absolute;
+  position:absolute;
   transform: rotateX(240deg) rotateY(25deg) rotateZ(-110deg);
   align-items: center;
-  flex-direction: column;
+  flex-direction:column;
   justify-content: center;
   transform-style: preserve-3d;
 }
@@ -774,17 +775,17 @@
   justify-content: center;
 }
 .contact-container1 {
-  width: 100%;
+  width: 40%;
   height: 423px;
   display: flex;
   flex-direction: column;
-  align-self: flex-start;
+  align-self: center;
   align-items: flex-start;
   border-width: 0px;
   justify-content: center;
   border-radius: 20px;
   background-color: #292929;
-  margin: 10px;
+  margin-top: 10px;
   
   
 }
@@ -840,6 +841,7 @@
   border-width:1px;
   color:#fff;
   border-radius: var(--dl-radius-radius-radius4);
+  width:70%;
   
 }
 .contact-textinput1 {
@@ -851,19 +853,19 @@
   border-color: #51515A;
   color:#fff;
 }
-.contact-textinput2 {
+.contact-textinput-subject{
   margin: var(--dl-space-space-halfunit);
   font-size: 1rem;
   border-color: var(--dl-color-gray-500);
   border-radius: var(--dl-radius-radius-radius4);
-  width: 100%;
+  width: 70%;
   background-color: #292929;
   border-width:1px;
   border-color: #51515A;
   color:#fff;
 }
-.contact-textinput3 {
-  width :100%;
+.contact-textinput-message {
+  width :70%;
   height: var(--dl-size-size-large);
   margin: var(--dl-space-space-halfunit);
   font-size: 1rem;
@@ -882,6 +884,21 @@
 .contact-button:hover {
   background-color: rgb(111, 240, 143);
 }
+.contact-cube2 {
+  right: -150px;
+  width: 210px;
+  /* bottom: -2px; */
+  top:700px;
+  height: 210px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  transform: rotateX(240deg) rotateY(50deg) rotateZ(-110deg);
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transform-style: preserve-3d;
+}
 .contact-section2 {
   gap: var(--dl-space-space-threeunits);
   flex: 1;
@@ -896,9 +913,10 @@
   justify-content: center;
 }
 .contact-cube1 {
-  right: -150px;
+  right: 1050px;
   width: 210px;
-  bottom: -80px;
+  /* bottom: -2px; */
+  top:100px;
   height: 210px;
   margin: auto;
   display: flex;

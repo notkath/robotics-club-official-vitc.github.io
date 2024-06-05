@@ -257,6 +257,7 @@ listenForUrlChangesMobileMenu()
               <div class="contact-buttons1"></div>
             </main>
           </a>
+          
           <!-- <div id="M1" class="contact-container1">
             <div class="flexbox-item flexbox-item-1">
               <textarea 
@@ -285,6 +286,13 @@ listenForUrlChangesMobileMenu()
               columns="10" 
               placeholder="Message"></textarea>
             </div> -->
+            <div class="contact-cube">
+              <div class="contact-top side"></div>
+              <div class="contact-front side"></div>
+              <div class="contact-left side"></div>
+            </div>
+
+            <!-- javascript for functionality -->
             <script>
               function sendEmail() {
                   var name = document.getElementById("iName").value;
@@ -293,12 +301,12 @@ listenForUrlChangesMobileMenu()
                   var message = document.getElementById("iMessage").value;
                   
                   var subject = subject;
-                  var body = "Name: " + name + "%0D%0A" +
-                             "Email: " + email + "%0D%0A" +
+                  var body = "Name: " + name + "\n" +
+                             "Email: " + email + "\n" +
                              "Message: " + message;
                   
                   // Construct the mailto URL
-                  var mailtoUrl = "mailto:catherine.g.irimben@gmail.com" +
+                  var mailtoUrl = "mailto:roboticsclubvitc@gmail.com" +
                                   "?subject=" + encodeURIComponent(subject) +
                                   "&body=" + encodeURIComponent(body);
                 
@@ -307,8 +315,8 @@ listenForUrlChangesMobileMenu()
                 }
                 </script>
           <div id="M1" class="contact-container1">
-                    <table style="width:50%">
-                      <tr>
+                    <table style="width:100%">
+                      <tr align="center">
                         <td>
                           <input
                           id="iName"
@@ -319,33 +327,33 @@ listenForUrlChangesMobileMenu()
                         </td>
 
                       </tr>
-                      <tr>
+                      <tr align="center">
                         <td> 
                           <input
                           id="iEmail"
-                          type="text"
+                          type="email"
                           placeholder="E-Mail Id"
                           class="contact-textinput input"
                           />
                         </td>
                       </tr>
-                      <tr>
+                      <tr align="center">
                         <td>
                           <input
                           id="iSubject"
                           type="text"
                           placeholder="Subject"
-                          class="contact-textinput2 input"
+                          class="contact-textinput-subject input"
                         />
 
                         </td>
 
                       </tr>
-                      <tr>
+                      <tr align="center">
                         <td>
                           <textarea 
                           id="iMessage"
-                          class = "contact-textinput3 input" 
+                          class = "contact-textinput-message input" 
                           rows="10" 
                           columns="10" 
                           placeholder="Message"></textarea>
@@ -353,7 +361,7 @@ listenForUrlChangesMobileMenu()
                         </td>
 
                       </tr>
-                      <tr>
+                      <tr align="center">
                         <td>
                           <button type="button" onclick="sendEmail()" id ="btnSend"
                           class="contact-button button">Send Message
@@ -364,6 +372,12 @@ listenForUrlChangesMobileMenu()
                     </table>
 
           </div>
+          <div class="contact-cube2">
+            <div class="contact-top1 side"></div>
+            <div class="contact-front1 side"></div>
+            <div class="contact-left1 side"></div>
+          </div>
+
 
         </section>
         <section class="contact-section2">
