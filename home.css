@@ -1218,7 +1218,6 @@
   display: flex;
   position: relative;
   align-items: center;
-  border-color: #51515A;
   padding-left: var(--dl-space-space-oneandhalfunits);
   padding-right: var(--dl-space-space-oneandhalfunits);
   flex-direction: column;
@@ -1366,7 +1365,6 @@
   padding-left: var(--dl-space-space-oneandhalfunits);
   padding-right: var(--dl-space-space-oneandhalfunits);
   flex-direction: column;
-  padding-bottom: 120px;
   justify-content: center;
 }
 .home-text05 {
@@ -1561,18 +1559,19 @@
 }
 .home-section04 {
   gap: var(--dl-space-space-fiveunits);
-  flex: 1;
   width: 100%;
   display: flex;
   align-items: center;
   padding-top: 120px;
-  border-color: #51515A;
+  /* border-color: #51515A; */
   padding-left: var(--dl-space-space-oneandhalfunits);
   padding-right: var(--dl-space-space-oneandhalfunits);
   flex-direction: column;
-  padding-bottom: 120px;
+  padding-bottom: 90px;
   justify-content: center;
   border-top-width: 1px;
+  flex: 1;
+  width: 100%;
 }
 .home-header02 {
   width: 100%;
@@ -2622,4 +2621,87 @@
   .home-image13 {
     width: 100%;
   }
+}
+
+
+/* .event-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+}
+.event-card{
+  flex: 0 0 300px; 
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+  text-align: center;
+}
+.event-container img{
+  width: 100%;
+}
+.event-texts{
+  padding: 10px; 
+  margin-bottom:10px;
+  color: white;
+}
+.head{
+  color:#80FF44;
+} */
+
+
+.event-container {
+  display: flex;
+  flex-wrap: nowrap; /* Ensure items stay in a single line */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  align-items: stretch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-color: transparent transparent; /* Firefox */
+  justify-content: flex-start; /* Adjust as needed */
+  padding: 10px; /* Optional padding */
+}
+
+.event-card {
+  min-width: 300px; /* Minimum width of each card */
+  margin: 0 10px; /* Adjust margins */
+  border: 1px solid #ccc;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.event-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+.event-container img {
+  width: 100%;
+}
+
+.event-texts {
+  padding: 10px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.head {
+  color: #80ff44;
+}
+
+.slider-container {
+  overflow: hidden;
+  width: 100%; /* Adjust width as needed */
+}
+
+.event-container {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.3s ease; /* Smooth transition for sliding effect */
+  padding: 10px; /* Optional padding */
+}
+
+.event-card {
+  min-width: 300px;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
