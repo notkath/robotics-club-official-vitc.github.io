@@ -157,7 +157,7 @@ const runMobileMenuCodeEmbed = () => {
     // On closeButton click, set the mobileMenu position to 0vw
     closeButton &amp;&amp; closeButton.addEventListener('click', function() {
         mobileMenu.style.transform = 'translateX(100%)'
-    })
+    }) 
 }
 
 runMobileMenuCodeEmbed()
@@ -947,34 +947,40 @@ listenForUrlChangesMobileMenu()
           </main>
         </section>
         <section class="home-section16">
-          <header class="home-header08">
-            <span class="home-section17 section-head">FAQ</span>
-            <h2 class="home-heading12 section-heading">
-              Frequently asked questions
-            </h2>
-          </header>
+          
           <main class="home-accordion">
             <div class="faq-accordion faq-root-class-name">
+              <header class="home-header08">
+                <span class="home-section17 section-head">FAQ</span>
+                <h2 class="home-heading12 section-heading">
+                  Frequently asked questions
+                </h2>
+              </header>
               <div
                 data-role="accordion-container"
                 class="faq-element accordion-element"
               >
                 <div class="faq-details">
                   <span class="faq-text">
-                    <span>
-                      What is the Robotics Club, and what activities do you
-                      participate in?
-                    </span>
-                    <br />
-                  </span>
-                  <span data-role="accordion-content" class="faq-text03">
-                    The robotics club is a gathering of like minded individuals
-                    focused on honing their skills in robotics and spreading
-                    knowledge about this field through events and seminars. We
-                    participate in events with our own unique robots made by the
-                    club members or we host events where we spread knowledge
-                    about various aspects of robotics
-                  </span>
+                    
+                    <section class="accordion">
+                      <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb1">
+                        <label for="cb1" class="tab__label">What is the Robotics Club, and what activities do you
+                        participate in?</label>
+                        <div class="tab__content">
+                          <p><br />
+                          </span>
+                          <span data-role="accordion-content" class="faq-text03">
+                            The robotics club is a gathering of like minded individuals
+                            focused on honing their skills in robotics and spreading
+                            knowledge about this field through events and seminars. We
+                            participate in events with our own unique robots made by the
+                            club members or we host events where we spread knowledge
+                            about various aspects of robotics
+                          </span></p>
+                        </div>
+                    </div>
                 </div>
                 <div data-role="accordion-icon" class="faq-icons"></div>
               </div>
@@ -984,23 +990,24 @@ listenForUrlChangesMobileMenu()
               >
                 <div class="faq-details1">
                   <span class="faq-text04">
-                    <br />
-                    <span>
-                      Can anyone join the Robotics Club, regardless of their
-                      prior experience or knowledge in robotics?
-                    </span>
-                    <br />
-                  </span>
-                  <span data-role="accordion-content" class="faq-text08">
-                    <span>
-                      Yes! We enthusiastically welcome all who are interested in
-                      actively participating in any of our events. "Even
-                      teachers were once students "
-                    </span>
-                    <br />
-                    <br />
-                  </span>
-                </div>
+                    <section class="accordion">
+                      <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb2">
+                        <label for="cb2" class="tab__label"><span>Can anyone join the Robotics Club, regardless of their
+                        prior experience or knowledge in robotics?</span></label>
+                        <div class="tab__content">
+                          <p><br />
+                            </span>
+                            <span data-role="accordion-content" class="faq-text08">
+                              Yes! We enthusiastically welcome all who are interested in
+                              actively participating in any of our events. "Even
+                              teachers were once students "
+                              </span>
+                          </p>
+                        </div>
+                    
+                      </div>
+                      </div>
                 <div data-role="accordion-icon" class="faq-icons1"></div>
               </div>
               <div
@@ -1009,24 +1016,30 @@ listenForUrlChangesMobileMenu()
               >
                 <div class="faq-details2">
                   <span class="faq-text12">
-                    <span>
-                      What types of robotics projects or competitions does the
-                      club engage in?
+                    <section class="accordion">
+                      <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb3">
+                        <label for="cb3" class="tab__label"><span>
+                          What types of robotics projects or competitions does the
+                          club engage in?
+                        </span>
+                        <br /></label>
+                        <div class="tab__content">
+                          <p><span data-role="accordion-content" class="faq-text15">
+                            <span>
+                              The club has its own special teams or FFCS teams who are
+                              each working on a project. The types of projects are
+                              Limitless as long it's of a sound base. The club
+                              participates in competitions even at an international
+                              level which also means we do not limit ourselves to any
+                              level when it comes to competitions
+                            </span>
+                            <br />
+                            <span></span>
+                          </span></p>
+                        </div>
+                      </div>
                     </span>
-                    <br />
-                  </span>
-                  <span data-role="accordion-content" class="faq-text15">
-                    <span>
-                      The club has its own special teams or FFCS teams who are
-                      each working on a project. The types of projects are
-                      Limitless as long it's of a sound base. The club
-                      participates in competitions even at an international
-                      level which also means we do not limit ourselves to any
-                      level when it comes to competitions
-                    </span>
-                    <br />
-                    <span></span>
-                  </span>
                 </div>
                 <div data-role="accordion-icon" class="faq-icons2"></div>
               </div>
@@ -1036,19 +1049,25 @@ listenForUrlChangesMobileMenu()
               >
                 <div class="faq-details3">
                   <span class="faq-text19">
-                    Do I need to have my own robotics kit or equipment to
-                    participate in the club activities?
-                  </span>
-                  <span data-role="accordion-content" class="faq-text20">
-                    <span>
-                      In most cases one wouldn't need to buy their own equipment
-                      if they are participating in events but if it's a project
-                      then it might be worked out of pocket which would require
-                      some equipment in advance
+                    <section class="accordion">
+                      <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb4">
+                        <label for="cb4" class="tab__label">Do I need to to own robotics kit or equipment to
+                        participate in the club activities?</label>
+                        <div class="tab__content">
+                          <p><span data-role="accordion-content" class="faq-text20">
+                            <span>
+                              In most cases one wouldn't need to buy their own equipment
+                              if they are participating in events but if it's a project
+                              then it might be worked out of pocket which would require
+                              some equipment in advance
+                            </span>
+                            <br />
+                          </span></p>
+                        </div>
+                      </div>
                     </span>
-                    <br />
-                  </span>
-                </div>
+                  </div>
                 <div data-role="accordion-icon" class="faq-icons3"></div>
               </div>
               <div
@@ -1057,25 +1076,31 @@ listenForUrlChangesMobileMenu()
               >
                 <div class="faq-details4">
                   <span class="faq-text23">
-                    <span>
-                      Are there any mentorship programs or opportunities for
-                      members to learn from experienced individuals in the
-                      field?
+                    <section class="accordion">
+                      <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb5">
+                        <label for="cb5" class="tab__label"><span>
+                          Are there any mentorship programs or opportunities for
+                          members to learn from experienced individuals in the
+                          field?
+                        </span>
+                        <br /></label>
+                        <div class="tab__content">
+                          <p><span data-role="accordion-content" class="faq-text26">
+                            <span>
+                              Our faculty coordinator Dr Arockiasamy S has many
+                              connections in this field. We also have a deeply rooted
+                              network of alumni of this club who are always willing to
+                              help. There are also regular bootcamps hosted to help
+                              develop the level of members in this club
+                            </span>
+                            <br />
+                            <span></span>
+                          </span></p>
+                        </div>
+                      </div>
                     </span>
-                    <br />
-                  </span>
-                  <span data-role="accordion-content" class="faq-text26">
-                    <span>
-                      Our faculty coordinator Dr Arockiasamy S has many
-                      connections in this field. We also have a deeply rooted
-                      network of alumni of this club who are always willing to
-                      help. There are also regular bootcamps hosted to help
-                      develop the level of members in this club
-                    </span>
-                    <br />
-                    <span></span>
-                  </span>
-                </div>
+                 </div>
                 <div data-role="accordion-icon" class="faq-icons4"></div>
               </div>
               <div
@@ -1084,21 +1109,30 @@ listenForUrlChangesMobileMenu()
               >
                 <div class="faq-details5">
                   <span class="faq-text30">
-                    <span>
-                      How can I get involved in leadership roles within the
-                      Robotics Club?
-                    </span>
-                    <br />
+                    <section class="accordion">
+                      <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb6">
+                        <label for="cb6" class="tab__label"><span>
+                          How can I get involved in leadership roles within the
+                          Robotics Club?
+                        </span>
+                        <br /></label>
+                        <div class="tab__content">
+                          <p><span data-role="accordion-content" class="faq-text33">
+                            <span>
+                              If one is active enough in the club and can prove to the
+                              leads or the board their worth and vision in the clubs
+                              future, they would be selected as leads during the next
+                              time they are recruiting for such roles
+                            </span>
+                            <br />
+                          </span></p>
+                        </div>
+                      </div>
+
+                    
                   </span>
-                  <span data-role="accordion-content" class="faq-text33">
-                    <span>
-                      If one is active enough in the club and can prove to the
-                      leads or the board their worth and vision in the clubs
-                      future, they would be selected as leads during the next
-                      time they are recruiting for such roles
-                    </span>
-                    <br />
-                  </span>
+                 
                 </div>
                 <div data-role="accordion-icon" class="faq-icons5"></div>
               </div>
@@ -1108,19 +1142,28 @@ listenForUrlChangesMobileMenu()
               >
                 <div class="faq-details6">
                   <span class="faq-text36">
-                    <br />
-                    <span>
-                      Can the Robotics Club help me pursue a career in robotics
-                      or engineering?
-                    </span>
+                    <section class="accordion">
+                      <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb7">
+                        <label for="cb7" class="tab__label"><br />
+                        <span>
+                          Can the Robotics Club help me pursue a career in robotics
+                          or engineering?
+                        </span></label>
+                        <div class="tab__content">
+                          <p><span data-role="accordion-content" class="faq-text40">
+                            Certainly! The Robotics Club offers opportunities to gain
+                            practical skills, knowledge, and networking connections that
+                            can greatly benefit your pursuit of a career in
+                            robotics&nbsp;or&nbsp;engineering.
+                          </span></p>
+                        </div>
+                      </div>
+
+                    
                     <br />
                   </span>
-                  <span data-role="accordion-content" class="faq-text40">
-                    Certainly! The Robotics Club offers opportunities to gain
-                    practical skills, knowledge, and networking connections that
-                    can greatly benefit your pursuit of a career in
-                    robotics&nbsp;or&nbsp;engineering.
-                  </span>
+                  
                 </div>
                 <div data-role="accordion-icon" class="faq-icons6"></div>
               </div>

@@ -554,7 +554,7 @@
   padding-right: var(--dl-space-space-oneandhalfunits);
   flex-direction: column;
   justify-content: center;
-  border-bottom-width: 1px;
+  border-bottom-width: 0px;
 }
 .contact-hero {
   width: 100%;
@@ -677,8 +677,8 @@
   top: 0px;
   left: 0px;
   right: 0px;
-  width: 425px;
-  height: 812px;
+  width: 300px;
+  height: 600px;
   margin: auto;
   z-index: 100;
   position: absolute;
@@ -691,6 +691,7 @@
 }
 .contact-image5 {
   display: none;
+ 
 }
 .contact-section1 {
   gap: var(--dl-space-space-fiveunits);
@@ -702,19 +703,20 @@
   padding-left: var(--dl-space-space-oneandhalfunits);
   padding-right: var(--dl-space-space-oneandhalfunits);
   flex-direction: column;
+  
   padding-bottom: 120px;
   justify-content: center;
 }
 .contact-cube {
-  top: 20px;
-  left: 0px;
+  top: 400px;
+  left: 50px;
   width: 120px;
   height: 120px;
   display: flex;
-  position: absolute;
+  position:absolute;
   transform: rotateX(240deg) rotateY(25deg) rotateZ(-110deg);
   align-items: center;
-  flex-direction: column;
+  flex-direction:column;
   justify-content: center;
   transform-style: preserve-3d;
 }
@@ -738,16 +740,19 @@
   display: contents;
 }
 .contact-banner {
-  width: 100%;
+  width: 60%;
+  
   display: flex;
-  padding: var(--dl-space-space-fiveunits);
+  padding: var(--dl-space-space-threeunits);
   z-index: 50;
   max-width: 1200px;
+  min-width: 290px;
   align-items: center;
   border-radius: 20px;
   justify-content: space-between;
   text-decoration: none;
   background-color: #292929;
+  margin-right:auto;
 }
 .contact-header1 {
   gap: var(--dl-space-space-unit);
@@ -770,14 +775,26 @@
   justify-content: center;
 }
 .contact-container1 {
-  width: 100%;
+  width: 40%;
   height: 423px;
   display: flex;
-  align-self: flex-start;
+  flex-direction: column;
+  align-self: center;
   align-items: flex-start;
-  border-color: #f7f0f0;
-  border-width: 1px;
+  border-width: 0px;
   justify-content: center;
+  border-radius: 20px;
+  background-color: #292929;
+  margin-top: 10px;
+  
+  
+}
+
+.contact-message-container{
+  width:50%;
+  align-self: center;
+  border-radius:50px;
+  background-color: #7eff46;
 }
 .contact-container2 {
   width: 100%;
@@ -816,40 +833,71 @@
 }
 .contact-textinput {
   margin: var(--dl-space-space-halfunit);
-  font-size: 2rem;
+  font-size: 1rem;
   align-self: flex-start;
   border-color: var(--dl-color-gray-500);
+  background-color: #292929;
+  border-color: #4f4f52;
+  border-width:1px;
+  color:#fff;
   border-radius: var(--dl-radius-radius-radius4);
+  width:70%;
+  
 }
 .contact-textinput1 {
   margin: var(--dl-space-space-halfunit);
-  font-size: 2rem;
+  font-size: 1rem;
   border-color: var(--dl-color-gray-500);
   border-radius: var(--dl-radius-radius-radius4);
+  background-color: #292929;
+  border-color: #51515A;
+  color:#fff;
 }
-.contact-textinput2 {
+.contact-textinput-subject{
   margin: var(--dl-space-space-halfunit);
-  font-size: 2rem;
+  font-size: 1rem;
   border-color: var(--dl-color-gray-500);
   border-radius: var(--dl-radius-radius-radius4);
+  width: 70%;
+  background-color: #292929;
+  border-width:1px;
+  border-color: #51515A;
+  color:#fff;
 }
-.contact-textinput3 {
-  width: 449px;
+.contact-textinput-message {
+  width :70%;
   height: var(--dl-size-size-large);
   margin: var(--dl-space-space-halfunit);
   font-size: 1rem;
   border-color: var(--dl-color-gray-500);
   border-radius: var(--dl-radius-radius-radius4);
+  background-color: #292929;
+
 }
 .contact-button {
   margin: var(--dl-space-space-unit);
-  font-size: 0.75rem;
-  transition: 0.3s;
+  font-size:1rem;
+  transition: 0.1s;
   border-color: var(--dl-color-gray-500);
   background-color: rgb(75, 212, 45);
 }
 .contact-button:hover {
-  background-color: rgb(15 15 15);
+  background-color: rgb(111, 240, 143);
+}
+.contact-cube2 {
+  right: -150px;
+  width: 210px;
+  /* bottom: -2px; */
+  top:700px;
+  height: 210px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  transform: rotateX(240deg) rotateY(50deg) rotateZ(-110deg);
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transform-style: preserve-3d;
 }
 .contact-section2 {
   gap: var(--dl-space-space-threeunits);
@@ -865,9 +913,10 @@
   justify-content: center;
 }
 .contact-cube1 {
-  right: -150px;
+  right: 1050px;
   width: 210px;
-  bottom: -80px;
+  /* bottom: -2px; */
+  top:100px;
   height: 210px;
   margin: auto;
   display: flex;
