@@ -635,7 +635,74 @@
     line-height: 24px;
   }
 }
+/*updated card carousel*/
+.slider{
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-family: Poppins;
 
+}
+.swiper {
+  width: 1000px;
+  height: 100%;
+  
+}
+.core24_25{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: Poppins;
+  color:#fbfbfb;
+}
+.profile-icons{
+  display:flex;
+  flex-direction: row;
+  color:#d4d4d4;
+  justify-content: space-around;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background:#0F0F0F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #d4d4d4;
+  padding:2rem;
+  flex-direction: column;
+  box-shadow: #51515A;
+}
+.profile-picture img{
+  max-width: 950px;
+  max-height: 450px;
+  position: relative;
+}
+.profile-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding:2rem;
+  color:#C2C6CC;
+}
+.profile-description p{
+  color:#08ff00;
+  padding:2px;
+}
+.swiper-button-next{
+  color:#fbfbfb;
+  padding:10px;
+}
+.swiper-button-prev{
+  color:#fbfbfb;
+  padding: 10px;
+}
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
 .explore-container {
   width: 100%;
   display: flex;
