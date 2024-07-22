@@ -652,14 +652,16 @@
   flex-direction: column;
   font-size: 14px;
   font-family: Poppins;
-
 }
 .swiper {
   width: 1000px;
-  height: 100%;
-  
+  height: 100%; 
 }
-.core24_25{
+.swiper-wrapper{
+  display:flex;
+  flex-direction:row;
+}
+.core_heading{
   display:flex;
   align-items: center;
   justify-content: center;
