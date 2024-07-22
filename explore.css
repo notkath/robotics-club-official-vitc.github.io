@@ -352,9 +352,19 @@
   flex-direction: column;
   justify-content: center;
 }
-.footer-branding {
+/* .footer-branding {
   width: 120px;
   object-fit: cover;
+} */
+.footer-branding-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-branding,
+.footer-branding-logo {
+  margin: 0;
+  width: 150px;
 }
 .footer-text {
   color: rgb(255, 255, 255);
@@ -762,9 +772,9 @@
 }
 .explore-caption {
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 35px;
   font-family: Poppins;
-  line-height: 30px;
+  line-height: 40px;
 }
 .explore-buttons {
   gap: var(--dl-space-space-unit);
