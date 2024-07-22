@@ -918,15 +918,6 @@
   flex-direction: column;
   justify-content: center;
 }
-/* .footer-branding {
-  width: 120px;
-  object-fit: cover;
-}
-.footer-branding-logo{
-  width: 200px;
-  object-fit: cover;
-} */
-
 .footer-branding-container {
   display: flex;
   align-items: center;
